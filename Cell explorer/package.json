@@ -1,0 +1,29 @@
+{
+  "name": "cell-explorer",
+  "version": "1.0.0",
+  "description": "## BackGround In this demo users will be able to have a fun learning experience. The user will be able to hover and click on organelles of both prokaryotic cell and eukaryotic cell. Upon hover user will see the name of each organelle. Upon click user will be able to see a description of each organelle",
+  "main": "index.js",
+  "browserslist": [
+    "defaults"
+  ],
+  "scripts": {
+    "watch": "webpack --watch --mode=development",
+    "build": "webpack --mode=production"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "^7.23.6",
+    "@babel/preset-env": "^7.23.6",
+    "babel-loader": "^9.1.3",
+    "core-js": "^3.34.0",
+    "css-loader": "^6.8.1",
+    "mini-css-extract-plugin": "^2.7.6",
+    "regenerator-runtime": "^0.14.0",
+    "sass": "^1.69.5",
+    "sass-loader": "^13.3.2",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4"
+  }
+}
