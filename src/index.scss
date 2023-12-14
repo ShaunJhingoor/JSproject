@@ -8,3 +8,53 @@ h1{
 body{
     background-color: black;
 }
+#cell1{
+    display: inline-block;
+    width: 650px;
+    height: 600px;
+    padding: 0px;
+    border: 10px double;
+    border-color: white;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+}
+
+#cell2{
+    width: 650px;
+    height: 600px;
+    padding: 0px;
+    border: 10px double;
+    border-color: white;
+}
+
+#cellname1{
+    border: 5px solid #ccc;
+    padding: 10px;
+    margin: 20px;
+    max-width: 300px;
+    margin-bottom: 5px;
+    color: green;
+    font-weight: bold;
+    text-align: center;
+    font-size: large;
+}
+#cellname2{
+    display: flex;
+    justify-content: space-between;
+    border: 5px solid #ccc;
+    padding: 10px;
+    margin: 20px;
+    max-width: 300px;
+    margin-bottom: 5px;
+    color: yellow;
+    font-weight: bold;
+    text-align: center;
+    font-size: large;
+}
+// }css instead of canvas
+
+// // .eukaryotic{
+
+// }

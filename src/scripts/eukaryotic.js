@@ -1,17 +1,13 @@
 class Eukaryotic {
-    constructor(cell1){
+    constructor(cell1,mitochondria,nucleus,rough_endoplasmic_reticulum,smooth_endoplasmic_reticulum,cytoplasm,golgi){
         this.cell1 = cell1
-        this.handleNucleusHover = this.handleNucleusHover.bind(this)
+        this.mitochondria = mitochondria
+        this.nucleus = nucleus 
+        this.rough_endoplasmic_reticulum = rough_endoplasmic_reticulum 
+        this.smooth_endoplasmic_reticulum = smooth_endoplasmic_reticulum 
+        this.cytoplasm = cytoplasm 
+        this.golgi = golgi 
     }
-    setupNucleus(){
-        let nucleus = document.createElement("nucleus")
-        nucleus.addEventListener("mouseover", this.handleNucleusHover)
-        this.cell1.appendChild(nucleus)
-    }
-    handleNucleusHover(e){
-        e.stopPropagration()
-        let ele = e.taget 
-        ele.classlist.toggle('nucleusHover')
-    }
+
 }
 export default Eukaryotic;

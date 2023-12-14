@@ -9,18 +9,23 @@
     <script src="./dist/main.js"></script>
     <title>Cell Explorer</title>
     <style>
-      canvas {
+      /* canvas {
         border: 4px double white; 
         padding: 100px;
-      }
+      } */
     </style>
   </head>
 
   <body>
     <h1>Cell Explorer</h1>
-    <canvas id="cell1" width="700" height="700"></canvas>                 
-    <canvas id="prokaryotic" width="700" height="700"></canvas>
+    <div class="container">
+    <div id="cellname1">Eukaryotic</div>
+    <div id="cellname2">Prokaryotic</div>
+    </div>
+    <canvas id="cell1" width="450" height="500" padding="0"></canvas>
+    <!-- <div id="cell1" ></div>                  -->
     
+    <canvas id="cell2" width="450" height="500" padding="0"></canvas>
   </body>
 
 </html>
