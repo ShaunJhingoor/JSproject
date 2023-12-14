@@ -4,9 +4,13 @@ document.addEventListener("DOMContentLoaded", () => {
     const ctx = document.getElementById("cell1").getContext("2d")
     ctx.beginPath()
     ctx.arc(225, 275, 200, 0, 2 * Math.PI)
-    ctx.fillStyle = "orange"
-
-    ctx.fill()
+    ctx.fillStyle = "orange";
+    ctx.fill();
+    ctx.strokeStyle = "white"; 
+    ctx.lineWidth = 3;
+    ctx.stroke();
+    // const mitochondria = New Mitochondria()
+    // new Eukaryotic(ctx,)
 })
 // document.addEventListener("DOMContentLoaded", () => {
 
