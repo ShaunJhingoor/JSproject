@@ -1,8 +1,10 @@
-import Example from "./scripts/example";
 
+import Eukaryotic from "./scripts/eukaryotic"
 document.addEventListener("DOMContentLoaded", () => {
-    const main = document.getElementById("main");
+
+    const cell1 = document.getElementById("cell1");
     // debugger;
-    new Example(main);
+   
+    new Eukaryotic(cell1)
     console.log("hello world");
 });
