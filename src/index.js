@@ -3,8 +3,10 @@ import Eukaryotic from "./scripts/eukaryotic"
 import Mitochondria from "./scripts/mitochondria"
 
 document.addEventListener("DOMContentLoaded", () => {
-    const ctx = document.getElementById("cell1").getContext("2d")
-    const ctx1 = document.getElementById("cell2").getContext("2d")
+    const canvas = document.getElementById("cell1")
+    const ctx = canvas.getContext("2d")
+    const canvas1 =  document.getElementById("cell2")
+    const ctx1 = canvas1.getContext("2d")
     
 
     ctx.beginPath()
@@ -36,8 +38,10 @@ document.addEventListener("DOMContentLoaded", () => {
     ctx1.fill();
     ctx1.stroke();
 
-    const mitochondria = new Mitochondria(ctx) 
-    mitochondria.setImageSource('https://as2.ftcdn.net/v2/jpg/04/80/60/45/1000_F_480604502_iUcg5SG7KqSX51xiNwZAUfXNwhkjShU0.jpg')
+    const mitochondria = new Mitochondria(ctx,"test") 
+    mitochondria.setImageSource('mitochondria.png')
+    // canvas.addEventListener('mouseover', (e) => mitochondria.handleMouseOver(e));
+    // canvas.addEventListener('mouseout', () => mitochondria.handleMouseOut());
     new Eukaryotic(ctx,mitochondria)
 })
 // document.addEventListener("DOMContentLoaded", () => {
