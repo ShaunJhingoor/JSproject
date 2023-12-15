@@ -1,64 +1,86 @@
-class Mitochondria{
-    constructor(ctx,description){
-        this.description = description
-        this.ctx = ctx
-        // this.canvas = this.ctx.canvas
-        this.image = new Image()
-        this.image.onload = this.draw.bind(this)
+class Mitochondria {
+    constructor(ctx, description) {
+        this.description = description;
+        this.ctx = ctx;
+        this.canvas = this.ctx.canvas
+        this.image = new Image();
+        this.image.onload = this.init.bind(this);
 
-        // this.modal = document.createElement('div');
-        // this.modal.className = 'modal';
-        // this.modal.innerHTML = `
-        //     <div class="modal-content">
-        //         <span class="close" onclick="mitochondria.close()">&times;</span>
-        //         <p>${this.description}</p>
-        //     </div>
-        // `;
-        // document.body.appendChild(this.modal);
-
-        
-        // this.canvas.addEventListener('mouseover', (e) => this.handleMouseOver(e));
-        // this.canvas.addEventListener('mouseout', () => this.handleMouseOut());
         this.animationFrame = null;
-        this.positionX = 200;
+        this.originalPositionX = 200;
+        this.positionX = this.originalPositionX;
         this.positionY = 200;
         this.directionX = 1; // 1 for right, -1 for left
         this.speed = 1;
+        this.frameCount = 0;
+
+        this.canvas.addEventListener('mouseover', () => this.startAnimation());
+        this.canvas.addEventListener('mouseout', () => this.stopAnimation());
     }
 
-    setImageSource(imageSource){
-        this.image.src = imageSource
+    init() {
+        this.setImageSource('mitochondria.png');
     }
 
-    draw() {
-        this.ctx.drawImage(this.image,200,200,100,100)
+    setImageSource(imageSource) {
+        this.image.src = imageSource;
     }
 
-//     handleMouseOver(e){
-//         console.log("the")
-//       this.show()
-//     }
+ draw() {
+    // this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
 
-//     handleMouseOut(){
-//         this.hide()
-//     }
+    this.positionX = this.originalPositionX + Math.sin(this.frameCount * 0.1) * 10;
 
-//    show(){
-//     this.modal.style.display = "block"
-//    }
+    this.positionY = 200 + Math.sin(this.frameCount * 0.07) * 5;
 
-//    hide(){
-//     this.modal.style.display = 'none'
-//    }
-
-//    close(){
-//     this.hide()
-//    }
+    this.ctx.drawImage(this.image, this.positionX, this.positionY, 100, 100);
 
     
+    if (this.positionX <= 0) {
+        this.positionX = 0;
+    } else if (this.positionX >= this.canvas.width - 100) {
+        this.positionX = this.canvas.width - 100;
+    }
+
+    this.frameCount++;
+
+    this.animationFrame = requestAnimationFrame(() => this.draw());
+}
+
+    startAnimation() {
+        if (!this.animationFrame) {
+            this.draw();
+        }
+    }
 
 }
-// const mitochondria = new Mitochondria() 
-// const imageSource = 'https://as2.ftcdn.net/v2/jpg/04/80/60/45/1000_F_480604502_iUcg5SG7KqSX51xiNwZAUfXNwhkjShU0.jpg';
-// mitochondria.setImageSource(imageSource)
-export default Mitochondria
+
+
+    // handleMouseMove(e) {
+    //     const x = e.clientX;
+    //     const y = e.clientY;
+    //     if (x >= this.positionX && x <= this.positionX + 100 && y >= this.positionY && y <= this.positionY + 100) {
+    //         this.show();
+    //     } else {
+    //         this.hide();
+    //     }
+    // }
+
+    // handleMouseOut() {
+    //     this.hide();
+    // }
+
+    // show() {
+    //     this.modal.style.display = 'block';
+    // }
+
+    // hide() {
+    //     this.modal.style.display = 'none';
+    // }
+
+    // close() {
+    //     this.hide();
+    // }
+
+
+export default Mitochondria;

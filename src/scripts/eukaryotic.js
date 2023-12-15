@@ -9,6 +9,11 @@ class Eukaryotic {
         // this.cytoplasm = cytoplasm 
         // this.golgi = golgi 
     }
+    draw() {
+        // TODO: put in draw code from index.js
+        // transfer reequeas animation frmMEMEi to index.js
+        // 
+    }
 
 }
 export default Eukaryotic;
