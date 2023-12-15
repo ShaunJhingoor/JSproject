@@ -8,10 +8,10 @@ document.addEventListener("DOMContentLoaded", () => {
     ctx.beginPath()
     ctx.arc(225, 275, 200, 0, 2 * Math.PI)
 
-    ctx.fillStyle = "orange";
+    ctx.fillStyle = "rgb(226,241,250)";
     ctx.fill();
-    ctx.strokeStyle = "white"; 
-    ctx.lineWidth = 3;
+    ctx.strokeStyle = "rgb(244,180,111)"; 
+    ctx.lineWidth = 7;
     ctx.stroke();
 
    
@@ -24,11 +24,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
     ctx1.fillRect(225 + 100, 275 - 80 / 2, 30, 80);
   
-    ctx1.strokeStyle = "white";
-    ctx1.lineWidth = 3;
+    ctx1.strokeStyle = "rgb(127,246,185)";
+    ctx1.lineWidth = 7;
 
     ctx1.closePath();
-    ctx1.fillStyle = "teal";
+    ctx1.fillStyle = "rgb(243,201,123)";
 
     ctx1.fill();
     ctx1.stroke();
