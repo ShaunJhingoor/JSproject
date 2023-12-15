@@ -1,10 +1,10 @@
 class Mitochondria{
     constructor(ctx){
         this.ctx = ctx
-       this.image = new Image()
-       this.image.onload = this.draw.bind(this)
-       document.body.appendChild(this.image) 
+        this.image = new Image()
+        this.image.onload = this.draw.bind(this)
     }
+
     setImageSource(imageSource){
         this.image.src = imageSource
     }

@@ -37,8 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
     ctx1.stroke();
 
     const mitochondria = new Mitochondria(ctx) 
-    const imageSource = 'https://as2.ftcdn.net/v2/jpg/04/80/60/45/1000_F_480604502_iUcg5SG7KqSX51xiNwZAUfXNwhkjShU0.jpg';
-    mitochondria.setImageSource(imageSource)
+    mitochondria.setImageSource('https://as2.ftcdn.net/v2/jpg/04/80/60/45/1000_F_480604502_iUcg5SG7KqSX51xiNwZAUfXNwhkjShU0.jpg')
     new Eukaryotic(ctx,mitochondria)
 })
 // document.addEventListener("DOMContentLoaded", () => {
