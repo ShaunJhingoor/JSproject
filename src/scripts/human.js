@@ -1,5 +1,6 @@
 import Eukaryotic from "./eukaryotic";
 import Mitochondria from "./mitochondria";
+import Nucleus from "./nucleus";
 class Human{
     constructor(ctx){
         this.ctx = ctx 
@@ -8,8 +9,10 @@ class Human{
         this.height = this.canvas.height;
         this.eukaryotic = new Eukaryotic(this.ctx);
         this.mitochondria = new Mitochondria(this.ctx);
+        this.nucleus = new Nucleus(this.ctx)
         this.mitochondria.setImageSource('mitochondria.png')
-        this.organelles = [this.eukaryotic, this.mitochondria]
+        this.nucleus.setImageSource('nucleus.png')
+        this.organelles = [this.eukaryotic, this.mitochondria, this.nucleus]
             // , this.mitochondria]
     }
 

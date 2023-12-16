@@ -7,8 +7,8 @@ class Mitochondria {
         this.image.onload = this.draw.bind(this)
 
         
-        this.x = 140;
-        this.y = 140;
+        this.x = 120;
+        this.y = 120;
         this.speed = .1; 
         this.direction = 1;
         
@@ -27,7 +27,7 @@ class Mitochondria {
             // this.x = 225;
             // this.y = 275
             // Check if the mitochondria reaches the right or left boundary
-            if (this.x + 1 >= 150 || this.x <= 140 && this.y + 1 >= 150 || this.y <= 140) {
+            if (this.x + 1 >= 125 || this.x <= 120 && this.y + 1 >= 125 || this.y <= 120) {
                 this.direction *= -1; // Change direction
             }
         }
