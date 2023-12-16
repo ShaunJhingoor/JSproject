@@ -6,7 +6,9 @@ class Nucleus{
         this.image.onload = this.draw.bind(this)
 
         this.x = 200;
-        this.y = 0;
+        this.y = 200;
+        this.speed = 0.01
+        this.direction = 1
     }
 
     setImageSource(imageSource){
@@ -14,11 +16,20 @@ class Nucleus{
     }
 
     draw() {
-        this.ctx.drawImage(this.image,this.x,this.x,100,100)
+        this.ctx.drawImage(this.image,this.x,this.y,100,100)
+    }
+
+    update(){
+        this.x = this.x + this.speed * this.direction;
+        this.y = this.y + this.speed * this.direction;
+        if (this.x + 1 >= 202 || this.x <= 200 && this.y + 1 >= 202 || this.y <= 200) {
+            this.direction *= -1; 
+        }
     }
 
     animate(){
         this.draw()
+        this.update()
   }
 }
 export default Nucleus

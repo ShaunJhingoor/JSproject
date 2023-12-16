@@ -1,4 +1,4 @@
-class Rougher{
+class Smoother{
     constructor(ctx){
         this.ctx = ctx 
         this.image = new Image();
@@ -6,8 +6,8 @@ class Rougher{
 
         
         this.x = 200;
-        this.y = 277;
-        this.speed = .011; 
+        this.y = 315;
+        this.speed = .01; 
         this.direction = 1;
     }
     setImageSource(imageSource){
@@ -16,13 +16,13 @@ class Rougher{
 
     draw() {
         // this.ctx.rotate(5)
-        this.ctx.drawImage(this.image,this.x,this.y,120,80)
+        this.ctx.drawImage(this.image,this.x,this.y,120,70)
     }
 
     update(){
             this.x = this.x + this.speed * this.direction;
             // this.y = this.y + this.speed * this.direction;
-            if (this.x + 1 >= 202|| this.x <= 200) {
+            if (this.x + 1 >= 202 || this.x <= 200) {
                 this.direction *= -1; 
             }
         }
@@ -32,4 +32,4 @@ class Rougher{
           this.update()
     }
 }
-export default Rougher
+export default Smoother
