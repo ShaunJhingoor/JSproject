@@ -1,6 +1,7 @@
 import Eukaryotic from "./eukaryotic";
 import Mitochondria from "./mitochondria";
 import Nucleus from "./nucleus";
+import Rougher from "./rougher"
 class Human{
     constructor(ctx){
         this.ctx = ctx 
@@ -10,9 +11,11 @@ class Human{
         this.eukaryotic = new Eukaryotic(this.ctx);
         this.mitochondria = new Mitochondria(this.ctx);
         this.nucleus = new Nucleus(this.ctx)
+        this.roughER = new Rougher(this.ctx)
+        this.roughER.setImageSource('RoughER.png')
         this.mitochondria.setImageSource('mitochondria.png')
         this.nucleus.setImageSource('nucleus.png')
-        this.organelles = [this.eukaryotic, this.mitochondria, this.nucleus]
+        this.organelles = [this.eukaryotic, this.mitochondria, this.nucleus, this.roughER]
             // , this.mitochondria]
     }
 

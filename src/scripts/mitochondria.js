@@ -18,17 +18,14 @@ class Mitochondria {
     }
 
     draw() {
-        this.ctx.drawImage(this.image,this.x,this.x,70,70)
+        this.ctx.drawImage(this.image,this.x,this.y,60,60)
     }
 
     update(){
             this.x = this.x + this.speed * this.direction;
             this.y = this.y + this.speed * this.direction;
-            // this.x = 225;
-            // this.y = 275
-            // Check if the mitochondria reaches the right or left boundary
             if (this.x + 1 >= 125 || this.x <= 120 && this.y + 1 >= 125 || this.y <= 120) {
-                this.direction *= -1; // Change direction
+                this.direction *= -1; 
             }
         }
 
