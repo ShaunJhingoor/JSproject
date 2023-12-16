@@ -16,7 +16,7 @@ class Golgi{
     }
 
     draw() {
-        this.ctx.drawImage(this.image,this.x,this.y,70,70)
+        this.ctx.drawImage(this.image,this.x,this.y,80,40)
     }
 
     update(){
