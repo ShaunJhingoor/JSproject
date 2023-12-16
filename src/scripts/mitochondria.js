@@ -1,56 +1,40 @@
 class Mitochondria {
-    constructor(ctx, description) {
-        this.description = description;
+    constructor(ctx) {
+      
         this.ctx = ctx;
-        this.canvas = this.ctx.canvas
+       
         this.image = new Image();
-        this.image.onload = this.init.bind(this);
+        this.image.onload = this.draw.bind(this)
 
-        this.animationFrame = null;
-        this.originalPositionX = 200;
-        this.positionX = this.originalPositionX;
-        this.positionY = 200;
-        this.directionX = 1; // 1 for right, -1 for left
-        this.speed = 1;
-        this.frameCount = 0;
-
-        this.canvas.addEventListener('mouseover', () => this.startAnimation());
-        this.canvas.addEventListener('mouseout', () => this.stopAnimation());
+        
+        this.x = 140;
+        this.y = 140;
+        this.speed = .1; 
+        this.direction = 1;
+        
+    }
+    setImageSource(imageSource){
+        this.image.src = imageSource
     }
 
-    init() {
-        this.setImageSource('mitochondria.png');
+    draw() {
+        this.ctx.drawImage(this.image,this.x,this.x,70,70)
     }
 
-    setImageSource(imageSource) {
-        this.image.src = imageSource;
-    }
-
- draw() {
-    // this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
-
-    this.positionX = this.originalPositionX + Math.sin(this.frameCount * 0.1) * 10;
-
-    this.positionY = 200 + Math.sin(this.frameCount * 0.07) * 5;
-
-    this.ctx.drawImage(this.image, this.positionX, this.positionY, 100, 100);
-
-    
-    if (this.positionX <= 0) {
-        this.positionX = 0;
-    } else if (this.positionX >= this.canvas.width - 100) {
-        this.positionX = this.canvas.width - 100;
-    }
-
-    this.frameCount++;
-
-    this.animationFrame = requestAnimationFrame(() => this.draw());
-}
-
-    startAnimation() {
-        if (!this.animationFrame) {
-            this.draw();
+    update(){
+            this.x = this.x + this.speed * this.direction;
+            this.y = this.y + this.speed * this.direction;
+            // this.x = 225;
+            // this.y = 275
+            // Check if the mitochondria reaches the right or left boundary
+            if (this.x + 1 >= 150 || this.x <= 140 && this.y + 1 >= 150 || this.y <= 140) {
+                this.direction *= -1; // Change direction
+            }
         }
+
+    animate(){
+          this.draw()
+          this.update()
     }
 
 }

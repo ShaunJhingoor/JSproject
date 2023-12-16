@@ -1,6 +1,5 @@
-
-import Eukaryotic from "./scripts/eukaryotic"
-import Mitochondria from "./scripts/mitochondria"
+import Human from "./scripts/human"
+// import Mitochondria from "./scripts/mitochondria"
 
 document.addEventListener("DOMContentLoaded", () => {
     const canvas = document.getElementById("cell1")
@@ -9,14 +8,14 @@ document.addEventListener("DOMContentLoaded", () => {
     const ctx1 = canvas1.getContext("2d")
     
 
-    ctx.beginPath()
-    ctx.arc(225, 275, 200, 0, 2 * Math.PI)
+    // ctx.beginPath()
+    // ctx.arc(225, 275, 200, 0, 2 * Math.PI)
 
-    ctx.fillStyle = "rgb(226,241,250)";
-    ctx.fill();
-    ctx.strokeStyle = "rgb(244,180,111)"; 
-    ctx.lineWidth = 7;
-    ctx.stroke();
+    // ctx.fillStyle = "rgb(226,241,250)";
+    // ctx.fill();
+    // ctx.strokeStyle = "rgb(244,180,111)"; 
+    // ctx.lineWidth = 7;
+    // ctx.stroke();
 
    
     ctx1.beginPath();
@@ -38,11 +37,8 @@ document.addEventListener("DOMContentLoaded", () => {
     ctx1.fill();
     ctx1.stroke();
 
-    const mitochondria = new Mitochondria(ctx,"test") 
-    mitochondria.setImageSource('mitochondria.png')
-    // canvas.addEventListener('mouseover', (e) => mitochondria.handleMouseOver(e));
-    // canvas.addEventListener('mouseout', () => mitochondria.handleMouseOut());
-    new Eukaryotic(ctx,mitochondria)
+   const human = new Human(ctx)
+   human.animate()
 })
 // document.addEventListener("DOMContentLoaded", () => {
 
