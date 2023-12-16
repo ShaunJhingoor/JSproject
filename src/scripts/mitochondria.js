@@ -1,5 +1,5 @@
 class Mitochondria {
-    constructor(ctx) {
+    constructor(ctx,x,y) {
       
         this.ctx = ctx;
        
@@ -7,10 +7,14 @@ class Mitochondria {
         this.image.onload = this.draw.bind(this)
 
         
-        this.x = 120;
-        this.y = 120;
+        this.x = x;
+        this.y = y;
         this.speed = .01; 
         this.direction = 1;
+        this.constx = this.x 
+        this.consty = this.y 
+        this.changex = this.constx + 5 
+        this.changey = this.constx + 5
         
     }
     setImageSource(imageSource){
@@ -18,13 +22,13 @@ class Mitochondria {
     }
 
     draw() {
-        this.ctx.drawImage(this.image,this.x,this.y,45,45)
+        this.ctx.drawImage(this.image,this.x,this.y,40,20)
     }
 
     update(){
-            this.x = this.x + this.speed * this.direction;
-            this.y = this.y + this.speed * this.direction;
-            if (this.x + 1 >= 125 || this.x <= 120 && this.y + 1 >= 125 || this.y <= 120) {
+            this.x += this.speed * this.direction;
+             this.y += this.speed * this.direction;
+            if (this.x + 1 >= this.changex || this.x <= this.constx && this.y + 1 >= this.changey|| this.y <= this.consty) {
                 this.direction *= -1; 
             }
         }
