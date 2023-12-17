@@ -4,7 +4,7 @@ class Cytoplasm {
         this.canvas = this.ctx.canvas
         this.x = 225;
         this.y = 275
-        this.speed = 0.1
+        this.speed = 0.07
         this.direction = 1
     }
 
