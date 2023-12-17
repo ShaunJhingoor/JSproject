@@ -3,6 +3,7 @@ import Cellwall from "./cellWall";
 import Plasmamemembrane from "./plasmamemembrane";
 import Cytoplasm from "./cytoplam1";
 import Flagella from "./flagella";
+import Plasmid from "./plasmid";
 class Bacteria{
     constructor(ctx){
         this.ctx = ctx
@@ -14,9 +15,10 @@ class Bacteria{
         this.cytoplasm = new Cytoplasm(ctx)
         this.plasmamemembrane = new Plasmamemembrane(ctx)
         this.flagella = new Flagella(ctx)
+        this.plasmid = new Plasmid(ctx)
         
         this.flagella.setImageSource('flagella.png')
-        this.organelles = [this.capsule, this.cellwall, this.plasmamemembrane, this.cytoplasm, this.flagella]
+        this.organelles = [this.capsule, this.cellwall, this.plasmamemembrane, this.cytoplasm, this.flagella, this.plasmid]
     }
 
     animate(){
