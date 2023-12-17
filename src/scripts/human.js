@@ -7,6 +7,7 @@ import Smoother from "./smoother";
 import Golgi from "./golgi";
 import Lysomes from "./lysomes";
 
+
 class Human{
     constructor(ctx){
         this.ctx = ctx 
@@ -23,7 +24,7 @@ class Human{
         this.smoothER = new Smoother(this.ctx)
         this.golgi = new Golgi(this.ctx)
         this.lysomes = new Lysomes(this.ctx)
-        
+
         this.golgi.setImageSource('golgi.png')
         this.roughER.setImageSource('RoughER.png')
         this.mitochondria.setImageSource('mitochondria.png')
@@ -32,7 +33,7 @@ class Human{
         this.nucleus.setImageSource('nucleus.png')
         this.smoothER.setImageSource('SmoothER.png')
         this.lysomes.setImageSource('Lysomes.png')
-        
+        // this.pathogen.setImageSource('pathogen.png')
 
         this.organelles = [this.cytoplasm, this.membrane,this.mitochondria, this.mitochondria1, this.mitochondria2,this.nucleus, this.roughER, this.smoothER, this.golgi, this.lysomes ]
     }

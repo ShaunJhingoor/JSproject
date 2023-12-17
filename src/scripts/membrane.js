@@ -1,7 +1,6 @@
 class Membrane{
     constructor(ctx){
         this.ctx = ctx
-        this.canvas = this.ctx.canvas
         this.x = 225;
         this.y = 275
         this.speed = 0.1

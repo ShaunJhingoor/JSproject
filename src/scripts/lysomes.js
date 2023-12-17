@@ -8,7 +8,7 @@ class Lysomes{
         
         this.x = 120;
         this.y = 340;
-        this.speed = 0.05
+        this.speed = .05
         this.direction = 1
     }
 
@@ -24,7 +24,7 @@ class Lysomes{
         this.x = this.x + this.speed * this.direction;
         this.y = this.y + this.speed * this.direction;
 
-        if (this.x + 1 >= 135 || this.x <= 200 && this.y + 1 >= 345 || this.y <= 340) {
+        if (this.x + 1 >= 150 || this.x <= 120 && this.y + 1 >= 370 || this.y <= 340) {
             this.direction *= -1; 
         }
     }
