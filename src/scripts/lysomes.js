@@ -5,9 +5,10 @@ class Lysomes{
         this.image = new Image();
         this.image.onload = this.draw.bind(this)
 
-        this.x = 140;
-        this.y = 280;
-        this.speed = 0.01
+        
+        this.x = 120;
+        this.y = 340;
+        this.speed = 0.05
         this.direction = 1
     }
 
@@ -22,7 +23,8 @@ class Lysomes{
     update(){
         this.x = this.x + this.speed * this.direction;
         this.y = this.y + this.speed * this.direction;
-        if (this.x + 1 >= 202 || this.x <= 200 && this.y + 1 >= 202 || this.y <= 200) {
+
+        if (this.x + 1 >= 135 || this.x <= 200 && this.y + 1 >= 345 || this.y <= 340) {
             this.direction *= -1; 
         }
     }
