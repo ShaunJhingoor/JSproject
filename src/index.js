@@ -18,14 +18,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // ctx1.fillRect(225 + 100, 275 - 80 / 2, 30, 80);
   
-    ctx1.strokeStyle = "green";
-    ctx1.lineWidth = 7;
+    // ctx1.strokeStyle = "green";
+    // ctx1.lineWidth = 7;
 
-    ctx1.closePath();
-    ctx1.fillStyle = "rgb(236,227,255)";
+    // ctx1.closePath();
+    // ctx1.fillStyle = "rgb(236,227,255)";
 
-    ctx1.fill();
-    ctx1.stroke();
+    // ctx1.fill();
+    // ctx1.stroke();
 
    const human = new Human(ctx)
    human.animate()
