@@ -1,13 +1,11 @@
-class Capsule{
+class Plasmamemembrane{
     constructor(ctx){
         this.ctx = ctx;
         this.x = 225;
         this.y = 250;
-        this.radius = 75; 
-        this.width = 150; 
+        this.radius = 65; 
+        this.width = 130; 
         this.height = 250;
-        this.speed = 1;
-        this.direction = 1;
     }
 
     draw() {
@@ -25,8 +23,8 @@ class Capsule{
     
         this.ctx.lineTo(this.x - this.width / 2, this.y - this.height / 2);
 
-        this.ctx.strokeStyle = "orange";
-        this.ctx.lineWidth = 3;
+        this.ctx.strokeStyle = "green";
+        this.ctx.lineWidth = 4;
 
         this.ctx.closePath();
 
@@ -37,4 +35,4 @@ class Capsule{
         this.draw()
     }
 }
-export default Capsule
+export default Plasmamemembrane

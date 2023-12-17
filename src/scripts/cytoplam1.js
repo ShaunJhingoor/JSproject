@@ -1,13 +1,11 @@
-class Capsule{
+class Cytoplasm{
     constructor(ctx){
         this.ctx = ctx;
         this.x = 225;
         this.y = 250;
-        this.radius = 75; 
-        this.width = 150; 
+        this.radius = 63; 
+        this.width = 126; 
         this.height = 250;
-        this.speed = 1;
-        this.direction = 1;
     }
 
     draw() {
@@ -25,16 +23,14 @@ class Capsule{
     
         this.ctx.lineTo(this.x - this.width / 2, this.y - this.height / 2);
 
-        this.ctx.strokeStyle = "orange";
-        this.ctx.lineWidth = 3;
+        this.ctx.fillStyle = "rgb(226,241,250)";  
+        this.ctx.fill();
 
         this.ctx.closePath();
-
-        this.ctx.stroke();
     }
   
     animate(){
         this.draw()
     }
 }
-export default Capsule
+export default Cytoplasm

@@ -1,5 +1,7 @@
 import Capsule from "./capsule";
 import Cellwall from "./cellWall";
+import Plasmamemembrane from "./plasmamemembrane";
+import Cytoplasm from "./cytoplam1";
 class Bacteria{
     constructor(ctx){
         this.ctx = ctx
@@ -8,7 +10,9 @@ class Bacteria{
         this.height = this.canvas.height;
         this.capsule = new Capsule(ctx)
         this.cellwall = new Cellwall(ctx)
-        this.organelles = [this.capsule, this.cellwall]
+        this.cytoplasm = new Cytoplasm(ctx)
+        this.plasmamemembrane = new Plasmamemembrane(ctx)
+        this.organelles = [this.capsule, this.cellwall, this.plasmamemembrane, this.cytoplasm]
     }
 
     animate(){
