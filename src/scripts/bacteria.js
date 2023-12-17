@@ -24,7 +24,7 @@ class Bacteria{
         this.ribsomes = new Ribsomes(ctx,180,260,.03)
         this.ribsomes1 = new Ribsomes(ctx,184,280,.05)
         this.ribsomes2 = new Ribsomes(ctx,190,290,.028)
-        this.ribsomes3 = new Ribsomes(ctx,170,298,.047)
+        this.ribsomes3 = new Ribsomes(ctx,170,260,.047)
         this.ribsomes4 = new Ribsomes(ctx,200,410,.045)
         this.ribsomes5 = new Ribsomes(ctx,180,90,.054)
         this.ribsomes6 = new Ribsomes(ctx,260,98,.06)
