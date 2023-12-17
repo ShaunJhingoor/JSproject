@@ -7,7 +7,7 @@ class Smoother{
         
         this.x = 200;
         this.y = 315;
-        this.speed = .01; 
+        this.speed = .03; 
         this.direction = 1;
     }
     setImageSource(imageSource){
@@ -22,7 +22,7 @@ class Smoother{
     update(){
             this.x = this.x + this.speed * this.direction;
             // this.y = this.y + this.speed * this.direction;
-            if (this.x + 1 >= 202 || this.x <= 200) {
+            if (this.x + 1 >= 205 || this.x <= 200) {
                 this.direction *= -1; 
             }
         }

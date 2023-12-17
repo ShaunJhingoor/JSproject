@@ -17,7 +17,7 @@ class Membrane{
     update(){
         this.x = this.x + this.speed * this.direction;
         this.y = this.y + this.speed * this.direction;
-        if (this.x + 1 >= 276 || this.x <= 275 && this.y + 1 >= 276 || this.y <= 275) {
+        if (this.x + 1 >= 280 || this.x <= 275 && this.y + 1 >= 280 || this.y <= 275) {
             this.direction *= -1; 
         }
     }

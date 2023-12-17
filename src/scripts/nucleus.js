@@ -7,7 +7,7 @@ class Nucleus{
 
         this.x = 200;
         this.y = 200;
-        this.speed = 0.01
+        this.speed = 0.03
         this.direction = 1
     }
 
@@ -22,7 +22,7 @@ class Nucleus{
     update(){
         this.x = this.x + this.speed * this.direction;
         this.y = this.y + this.speed * this.direction;
-        if (this.x + 1 >= 202 || this.x <= 200 && this.y + 1 >= 202 || this.y <= 200) {
+        if (this.x + 1 >= 205 || this.x <= 200 && this.y + 1 >= 205 || this.y <= 200) {
             this.direction *= -1; 
         }
     }

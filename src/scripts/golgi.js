@@ -7,7 +7,7 @@ class Golgi{
 
         this.x = 50;
         this.y = 220;
-        this.speed = 0.01
+        this.speed = 0.03
         this.direction = 1
     }
 
@@ -22,7 +22,7 @@ class Golgi{
     update(){
         this.x = this.x + this.speed * this.direction;
         this.y = this.y + this.speed * this.direction;
-        if (this.x + 1 >= 52 || this.x <= 50 && this.y + 1 >= 222|| this.y <= 220) {
+        if (this.x + 1 >= 55 || this.x <= 50 && this.y + 1 >= 225|| this.y <= 220) {
             this.direction *= -1; 
         }
     }

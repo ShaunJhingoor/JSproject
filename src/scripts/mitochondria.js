@@ -9,7 +9,7 @@ class Mitochondria {
         
         this.x = x;
         this.y = y;
-        this.speed = .01; 
+        this.speed = .03; 
         this.direction = 1;
         this.constx = this.x 
         this.consty = this.y 
@@ -22,7 +22,7 @@ class Mitochondria {
     }
 
     draw() {
-        this.ctx.drawImage(this.image,this.x,this.y,40,20)
+        this.ctx.drawImage(this.image,this.x,this.y,60,30)
     }
 
     update(){
