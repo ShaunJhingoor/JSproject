@@ -1,3 +1,4 @@
+import Capsule from "./capsule";
 import Cellwall from "./cellWall";
 class Bacteria{
     constructor(ctx){
@@ -5,8 +6,9 @@ class Bacteria{
         this.canvas = this.ctx.canvas
         this.width = this.canvas.width;
         this.height = this.canvas.height;
+        this.capsule = new Capsule(ctx)
         this.cellwall = new Cellwall(ctx)
-        this.organelles = [this.cellwall]
+        this.organelles = [this.capsule, this.cellwall]
     }
 
     animate(){
