@@ -5,6 +5,8 @@ import Cytoplasm from "./cytoplam1";
 import Flagella from "./flagella";
 import Plasmid from "./plasmid";
 import Pilli from "./pilli";
+import Nucleoid from "./nucleoid";
+import Ribsomes from "./ribsomes";
 class Bacteria{
     constructor(ctx){
         this.ctx = ctx
@@ -17,6 +19,30 @@ class Bacteria{
         this.plasmamemembrane = new Plasmamemembrane(ctx)
         this.flagella = new Flagella(ctx)
         this.plasmid = new Plasmid(ctx)
+        this.nucleoid = new Nucleoid(ctx)
+
+        this.ribsomes = new Ribsomes(ctx,180,260,.03)
+        this.ribsomes1 = new Ribsomes(ctx,184,280,.05)
+        this.ribsomes2 = new Ribsomes(ctx,190,290,.028)
+        this.ribsomes3 = new Ribsomes(ctx,170,298,.047)
+        this.ribsomes4 = new Ribsomes(ctx,200,410,.045)
+        this.ribsomes5 = new Ribsomes(ctx,180,90,.054)
+        this.ribsomes6 = new Ribsomes(ctx,260,98,.06)
+        this.ribsomes7 = new Ribsomes(ctx,280,200,.036)
+        this.ribsomes8 = new Ribsomes(ctx,280,180,.041)
+        this.ribsomes9 = new Ribsomes(ctx,260,370,.047)
+        this.ribsomes10 = new Ribsomes(ctx,180,200,.04)
+        this.ribsomes11 = new Ribsomes(ctx,180,140,.056)
+        this.ribsomes12 = new Ribsomes(ctx,220,130,.048)
+        this.ribsomes13 = new Ribsomes(ctx,220,100,.046)
+        this.ribsomes14 = new Ribsomes(ctx,180,340,.056)
+        this.ribsomes15 = new Ribsomes(ctx,280,335,.049)
+        this.ribsomes16 = new Ribsomes(ctx,270,310, 0.052)
+        this.ribsomes17 = new Ribsomes(ctx,280,280,.067)
+        this.ribsomes18 = new Ribsomes(ctx,280,240,0.043)
+        this.ribsomes19 = new Ribsomes(ctx,260,140,.032)
+
+// x =165 left  x=280 right top =65 bottom = 430
         this.pilli = new Pilli(ctx, 300, 220,.05,1)
         this.pilli1 = new Pilli(ctx, 300, 170,.06,1.3)
         this.pill2 = new Pilli(ctx, 300, 110, .07,1.7)
@@ -31,12 +57,18 @@ class Bacteria{
         this.pilli9 = new Pilli(ctx, 90, 255, .04,1.5)
         this.pilli10 = new Pilli(ctx,110, 306, .08,1)
         this.pilli11 = new Pilli(ctx, 90 , 357, .04,1.5)
-        // x = 300 right // x = 110 left y = if width 1.5 needs to be 90ish if 1 needs to be 110
+     
         this.flagella.setImageSource('flagella.png')
+        this.nucleoid.setImageSource('nucleoid.png')
         this.organelles = [this.capsule, this.cellwall, this.plasmamemembrane, 
         this.cytoplasm, this.flagella, this.plasmid, this.pilli, this.pilli1,
         this.pill2, this.pill3, this.pill4, this.pill5, this.pilli6,this.pilli7,
-        this.pilli8,this.pilli9,this.pilli10,this.pilli11, this.pilli12]
+        this.pilli8,this.pilli9,this.pilli10,this.pilli11, this.pilli12,this.nucleoid, 
+        this.ribsomes, this.ribsomes1,this.ribsomes2,this.ribsomes3,this.ribsomes4, this.ribsomes5,
+        this.ribsomes6, this.ribsomes7, this.ribsomes8, this.ribsomes9, this.ribsomes10, this.ribsomes11,
+        this.ribsomes12, this.ribsomes13, this.ribsomes14, this.ribsomes15, this.ribsomes16, this.ribsomes17, this.ribsomes18,
+        this.ribsomes19
+    ]
     }
 
     animate(){

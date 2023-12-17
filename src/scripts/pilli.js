@@ -13,12 +13,11 @@ class Pilli{
     }
 
     draw(){
-        this.ctx.fillStyle = "green";
+        this.ctx.fillStyle = "rgb(90,188,134)";
 
-        // Draw a series of connected rectangles to create a squiggly effect
         for (let i = 0; i < 40; i++) {
             const height = 2 * Math.sin(this.time + i / 4);
-            // const width = 1.5
+            
             this.ctx.fillRect(this.x + i * this.width, this.y + height / 2, this.width, height);;
         }
     }

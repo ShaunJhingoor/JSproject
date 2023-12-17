@@ -1,13 +1,13 @@
-class Flagella{
+class Nucleoid{
     constructor(ctx) {
         this.ctx = ctx 
 
         this.image = new Image();
         this.image.onload = this.draw.bind(this)
 
-        this.x = 220;
-        this.y = 450;
-        this.speed = 0.05
+        this.x = 200;
+        this.y = 150;
+        this.speed = 0.03
         this.direction = 1
     }
 
@@ -16,13 +16,13 @@ class Flagella{
     }
 
     draw() {
-        this.ctx.drawImage(this.image,this.x,this.y,20,60)
+        this.ctx.drawImage(this.image,this.x,this.y,60,150)
     }
 
     update(){
         this.x = this.x + this.speed * this.direction;
-        // this.y = this.y + this.speed * this.direction;
-        if (this.x + 1 >= 225 || this.x <= 220) {
+        this.y = this.y + this.speed * this.direction;
+        if (this.x + 1 >= 205 || this.x <= 200 && this.y + 1 >= 155 || this.y <= 150) {
             this.direction *= -1; 
         }
     }
@@ -32,4 +32,4 @@ class Flagella{
         this.update()
   }
 }
-export default Flagella
+export default Nucleoid
