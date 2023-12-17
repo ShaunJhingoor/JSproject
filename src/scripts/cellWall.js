@@ -3,8 +3,8 @@ class Cellwall{
         this.ctx = ctx;
         this.x = 225;
         this.y = 250;
-        this.radius = 70; // Adjust the radius to control the curvature of the pill shape
-        this.width = 140; // Adjust the width of the pill shape
+        this.radius = 70; 
+        this.width = 140; 
         this.height = 249;
         this.speed = 0.1;
         this.direction = 1;

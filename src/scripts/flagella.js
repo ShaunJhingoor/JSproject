@@ -5,9 +5,9 @@ class Flagella{
         this.image = new Image();
         this.image.onload = this.draw.bind(this)
 
-        this.x = 210;
+        this.x = 220;
         this.y = 450;
-        this.speed = 0.1
+        this.speed = 0.03
         this.direction = 1
     }
 
@@ -16,13 +16,13 @@ class Flagella{
     }
 
     draw() {
-        this.ctx.drawImage(this.image,this.x,this.y,30,60)
+        this.ctx.drawImage(this.image,this.x,this.y,20,60)
     }
 
     update(){
         this.x = this.x + this.speed * this.direction;
         // this.y = this.y + this.speed * this.direction;
-        if (this.x + 1 >= 215 || this.x <= 210) {
+        if (this.x + 1 >= 225 || this.x <= 220) {
             this.direction *= -1; 
         }
     }
