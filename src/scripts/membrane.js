@@ -3,13 +3,16 @@ class Membrane{
         this.ctx = ctx
         this.x = 225;
         this.y = 275
-        this.speed = 0.1
+        this.radius = 200
+        this.speed = 0.05
         this.direction = 1
     }
     draw() {
-       this.ctx.strokeStyle = "rgb(244,180,111)"; 
-       this.ctx.lineWidth = 7;
-       this.ctx.stroke();
+        this.ctx.beginPath();
+        this.ctx.arc(this.x, this.y, this.radius, 0, 2 * Math.PI)   
+        this.ctx.lineWidth = 7; 
+        this.ctx.strokeStyle = "orange"; 
+        this.ctx.stroke()
     
     }
 
