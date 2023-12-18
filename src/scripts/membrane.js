@@ -11,7 +11,7 @@ class Membrane {
             name: "Cell Membrane",
             description: "This is the cell membrane. It protects the cell and controls what enters and exits."
         };
-
+        this.handleModalClick = this.handleModalClick.bind(this)
         this.createModal();
     }
 
@@ -28,17 +28,16 @@ class Membrane {
     }
 
     handleModalClick(event) {
-        const rect = this.ctx.canvas.getBoundingClientRect();
-        const mouseX = event.clientX - rect.left;
-        const mouseY = event.clientY - rect.top;
-    
-        // Check if the click is inside the circular path of the membrane
-        const distance = Math.sqrt((mouseX - this.x) ** 2 + (mouseY - this.y) ** 2);
-    
-        // Check if the click is inside the circular path and within the membrane area
-        if (distance <= this.radius && mouseX >= this.x - this.radius && mouseX <= this.x + this.radius && mouseY >= this.y - this.radius && mouseY <= this.y + this.radius && event.button === 0) {
+        // const rect = this.ctx.canvas.getBoundingClientRect();
+        const mouseX = event.clientX 
+        const mouseY = event.clientY 
+        
+        // if (x-x0)^2 + (y-y0)^2 == r^2
+        const distance = (mouseX- this.x)**2 + (mouseY - this.y)**2
+        if(distance <= this.radius**2){
             this.showModal();
         }
+      
     }
     
 
