@@ -10,7 +10,53 @@ class Lysomes{
         this.y = 340;
         this.speed = .05
         this.direction = 1
+        this.modalContent = {
+            name: "Lysomes",
+            description: "This is a Lysome. It protects the cell from foreign material and destroys the foreign material"
+        };
+        this.handleModalClick = this.handleModalClick.bind(this)
+        this.createModal();
     }
+
+    createModal() {
+        this.modal = document.getElementById("organelleModal");
+        this.modalName = document.getElementById("organelleName");
+        this.modalDescription = document.getElementById("organelleDescription");
+
+        this.modalName.textContent = this.modalContent.name;
+        this.modalDescription.textContent = this.modalContent.description;
+
+        
+        this.ctx.canvas.addEventListener("click", this.handleModalClick);
+    }
+
+    handleModalClick(event) {
+        event.stopPropagation();
+        
+        let canvas = document.getElementById("cell1");
+        let res = canvas.getBoundingClientRect();
+
+        let mouseX = event.clientX - res.x
+        let mouseY = event.clientY - res.y
+        
+        
+        console.log(mouseX)
+        console.log(mouseY)
+        console.log(this.x)
+        console.log(this.y)
+                         
+        if (
+            mouseX >= this.x - 20 && mouseX <= this.x + 30 &&
+            mouseY >= this.y - 20 && mouseY <= this.y + 30
+        ) {
+            this.showModal()
+        }
+    }
+
+    showModal() {
+        this.modal.style.display = 'block';
+    }
+
 
     setImageSource(imageSource){
         this.image.src = imageSource

@@ -12,11 +12,21 @@ body{
 
 #cell1 {
     position: relative; 
-    display: inline-block;
+    // display: inline-block;
     background-color: whitesmoke;
-    width: 650px;
-    height: 600px;
-    padding: 0px;
+    // width: 650px;
+    // height: 600px;
+    border: 10px solid;
+    border-color: black;
+    margin-top: 50px;
+    margin-left: 120px;
+}
+
+#cell2 {
+    position: relative; 
+    background-color: whitesmoke;
+    // width: 650px;
+    // height: 600px;
     border: 10px solid;
     border-color: black;
     margin-top: 50px;
@@ -26,24 +36,12 @@ body{
     position: relative; 
     text-align: center; 
 }
-
-#cell2 {
-    position: relative; 
-    background-color: whitesmoke;
-    width: 650px;
-    height: 600px;
-    padding: 0px;
-    border: 10px solid;
-    border-color: black;
-    margin-top: 50px;
-}
-
 #cellname1 {
     position: absolute;
     // background-color: green;
     top: 50%;
     left: 32%;
-    transform: translate(-90%, -50%);
+    transform: translate(-75%, -50%);
     // border: 5px solid black;
     padding: 10px;
     max-width: 800px;
@@ -59,7 +57,7 @@ body{
     position: absolute;
     top: 50%;
     left: 65%;
-    transform: translate(-10%, -50%);
+    transform: translate(-40%, -50%);
     // border: 5px solid black;
     padding: 10px;
     max-width: 800px;
