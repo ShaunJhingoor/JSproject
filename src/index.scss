@@ -1,63 +1,76 @@
 // @import "./styles/eukaryotic.scss";
 h1{
     text-align: center;
-    color:  white;
-    font-size: 5em;
+    color: black;
+    font-size: 100px;
     font-style: italic;
 }
 
 body{
-    background-color: black;
+    background-color: rgb(112,146,190);
 }
 
-#cell1{
+#cell1 {
+    position: relative; 
     display: inline-block;
+    background-color: whitesmoke;
     width: 650px;
     height: 600px;
     padding: 0px;
-    border: 10px double;
-    border-color: white;
+    border: 10px solid;
+    border-color: black;
+    margin-top: 50px;
 }
 
-.container{
-    display: flex;
-    justify-content: space-between;
+.container {
+    position: relative; 
+    text-align: center; 
 }
 
-#cell2{
+#cell2 {
+    position: relative; 
+    background-color: whitesmoke;
     width: 650px;
     height: 600px;
     padding: 0px;
-    border: 10px double;
-    border-color: white;
+    border: 10px solid;
+    border-color: black;
+    margin-top: 50px;
 }
 
-#cellname1{
-    border: 5px solid #ccc;
+#cellname1 {
+    position: absolute;
+    // background-color: green;
+    top: 50%;
+    left: 32%;
+    transform: translate(-90%, -50%);
+    // border: 5px solid black;
     padding: 10px;
-    margin: 20px;
-    max-width: 300px;
-    margin-bottom: 5px;
-    color: green;
-    font-weight: bold;
+    max-width: 800px;
+    color: black;
+    font-weight:bolder;
     text-align: center;
-    font-size: large;
+    font-size:50px;
+  
 }
 
-#cellname2{
-    display: flex;
-    justify-content: space-between;
-    border: 5px solid #ccc;
+
+#cellname2 {
+    position: absolute;
+    top: 50%;
+    left: 65%;
+    transform: translate(-10%, -50%);
+    // border: 5px solid black;
     padding: 10px;
-    margin: 20px;
-    max-width: 300px;
-    margin-bottom: 5px;
-    color: yellow;
-    font-weight: bold;
+    max-width: 800px;
+    color: black;
+    // background-color: yellow;
+    font-weight: bolder;
     text-align: center;
-    font-size: large;
+    font-size: 50px;
 }
-/* styles.css */
+
+
 .modal {
     display: none;
     position: fixed;
@@ -93,4 +106,6 @@ body{
     text-decoration: none;
     cursor: pointer;
 }
+
+
 

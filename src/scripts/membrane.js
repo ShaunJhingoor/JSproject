@@ -24,17 +24,18 @@ class Membrane {
         this.modalDescription.textContent = this.modalContent.description;
 
         
-        this.ctx.canvas.addEventListener("click", (event) => this.handleModalClick(event));
+        this.ctx.canvas.addEventListener("click", this.handleModalClick);
     }
 
     handleModalClick(event) {
-        // const rect = this.ctx.canvas.getBoundingClientRect();
+        event.stopPropagation();
         const mouseX = event.clientX 
         const mouseY = event.clientY 
         
         // if (x-x0)^2 + (y-y0)^2 == r^2
         const distance = (mouseX- this.x)**2 + (mouseY - this.y)**2
-        if(distance <= this.radius**2){
+        const radius = this.radius + 3.5
+        if(distance <= radius**2){
             this.showModal();
         }
       
