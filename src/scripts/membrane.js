@@ -1,19 +1,57 @@
-class Membrane{
-    constructor(ctx){
-        this.ctx = ctx
+// membrane.js
+class Membrane {
+    constructor(ctx) {
+        this.ctx = ctx;
         this.x = 225;
-        this.y = 275
-        this.radius = 200
-        this.speed = 0.05
-        this.direction = 1
+        this.y = 275;
+        this.radius = 200;
+        this.speed = 0.05;
+        this.direction = 1;
+        this.modalContent = {
+            name: "Cell Membrane",
+            description: "This is the cell membrane. It protects the cell and controls what enters and exits."
+        };
+
+        this.createModal();
     }
+
+    createModal() {
+        this.modal = document.getElementById("organelleModal");
+        this.modalName = document.getElementById("organelleName");
+        this.modalDescription = document.getElementById("organelleDescription");
+
+        this.modalName.textContent = this.modalContent.name;
+        this.modalDescription.textContent = this.modalContent.description;
+
+        
+        this.ctx.canvas.addEventListener("click", (event) => this.handleModalClick(event));
+    }
+
+    handleModalClick(event) {
+        const rect = this.ctx.canvas.getBoundingClientRect();
+        const mouseX = event.clientX - rect.left;
+        const mouseY = event.clientY - rect.top;
+    
+        // Check if the click is inside the circular path of the membrane
+        const distance = Math.sqrt((mouseX - this.x) ** 2 + (mouseY - this.y) ** 2);
+    
+        // Check if the click is inside the circular path and within the membrane area
+        if (distance <= this.radius && mouseX >= this.x - this.radius && mouseX <= this.x + this.radius && mouseY >= this.y - this.radius && mouseY <= this.y + this.radius && event.button === 0) {
+            this.showModal();
+        }
+    }
+    
+
+    showModal() {
+        this.modal.style.display = 'block';
+    }
+
     draw() {
         this.ctx.beginPath();
-        this.ctx.arc(this.x, this.y, this.radius, 0, 2 * Math.PI)   
-        this.ctx.lineWidth = 7; 
-        this.ctx.strokeStyle = "orange"; 
-        this.ctx.stroke()
-    
+        this.ctx.arc(this.x, this.y, this.radius, 0, 2 * Math.PI);
+        this.ctx.lineWidth = 7;
+        this.ctx.strokeStyle = "orange";
+        this.ctx.stroke();
     }
 
     update(){
@@ -24,9 +62,13 @@ class Membrane{
         }
     }
 
-    animate(){
-        this.update()
-        this.draw()
+    animate() {
+        this.update();
+        this.draw();
     }
 }
-export default Membrane
+
+export default Membrane;
+
+
+
