@@ -38,10 +38,11 @@ class Lysomes{
 
         let mouseX = event.clientX - res.x
         let mouseY = event.clientY - res.y
+        
                          
         if (
-            mouseX >= this.x - 20 && mouseX <= this.x + 30 &&
-            mouseY >= this.y - 20 && mouseY <= this.y + 30
+            mouseX >= this.x - 1 && mouseX <= this.x + 40 &&
+            mouseY >= this.y - 10 && mouseY <= this.y + 40
         ) {
             this.showModal()
         }

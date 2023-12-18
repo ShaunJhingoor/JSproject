@@ -11,7 +11,7 @@ class Golgi{
         this.direction = 1
         this.modalContent = {
             name: "Golgi",
-            description: "The golgi is responsible for a multitude of function within the cell. One function of the golgi is to modify protein and lipids receieved by the endoplasmic reticulum and modify them in a process known as glycosylation. Then the golgi sorts and packages these modified molecules into vesciles "
+            description: "The golgi is responsible for a multitude of function within the cell. One function of the golgi is to modify protein and lipids receieved by the endoplasmic reticulum. The proteins and lipids are by modify by a process known as glycosylation. Then the golgi sorts and packages these modified molecules into vesciles "
         };
         this.handleModalClick = this.handleModalClick.bind(this)
         this.createModal();
