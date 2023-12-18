@@ -11,10 +11,6 @@
 
     <title>Cell Explorer</title>
     <style>
-      /* canvas {
-        border: 4px double white; 
-        padding: 100px;
-      } */
     </style>
   </head>
 
@@ -24,10 +20,12 @@
     <div id="cellname1">Eukaryotic</div>
     <div id="cellname2">Prokaryotic</div>
     </div>
+
     <canvas id="cell1" width="500" height="500" padding="0"></canvas>
-    <!-- <div id="cell1" ></div>                  -->
+   
     
     <canvas id="cell2" width="500" height="500" padding="0"></canvas>
+
     <div id="organelleModal" class="modal">
 
       <div class="modal-content">
@@ -36,12 +34,42 @@
           <p id="organelleDescription"></p>
       </div>
   </div>
-  <!-- <script src="./dist/main.js"></script> -->
+
   <script>
     function closeModal() {
         document.getElementById("organelleModal").style.display = "none";
     }
 </script>
+
+<div id="organelleModal1" class="modal1">
+  <div class="modal-content1">
+    <span class="close1" onclick="closeModal1()">&times;</span>
+    <h2 id="organelleName1"></h2>
+    <p id="organelleDescription1"></p>
+</div>
+</div>
+ 
+<script>
+  function closeModal1() {
+      document.getElementById("organelleModal1").style.display = "none";
+  }
+</script>
+
+<div id="organelleModal2" class="modal2">
+  <div class="modal-content2">
+    <span class="close2" onclick="closeModal2()">&times;</span>
+    <h2 id="organelleName2"></h2>
+    <p id="organelleDescription2"></p>
+</div>
+</div>
+ 
+<script>
+  function closeModal2() {
+      document.getElementById("organelleModal2").style.display = "none";
+  }
+</script>
+
+
   </body>
 
 </html>

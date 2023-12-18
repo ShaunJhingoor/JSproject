@@ -18,9 +18,9 @@ class Golgi{
     }
 
     createModal() {
-        this.modal = document.getElementById("organelleModal");
-        this.modalName = document.getElementById("organelleName");
-        this.modalDescription = document.getElementById("organelleDescription");
+        this.modal = document.getElementById("organelleModal1");
+        this.modalName = document.getElementById("organelleName1");
+        this.modalDescription = document.getElementById("organelleDescription1");
 
         this.modalName.textContent = this.modalContent.name;
         this.modalDescription.textContent = this.modalContent.description;
@@ -38,14 +38,9 @@ class Golgi{
         let mouseX = event.clientX - res.x
         let mouseY = event.clientY - res.y
         
-        
-        console.log(mouseX)
-        console.log(mouseY)
-        console.log(this.x)
-        console.log(this.y)
                          
         if (
-            mouseX >= this.x - 40 && mouseX <= this.x + 80 &&
+            mouseX >= this.x - 1 && mouseX <= this.x + 70 &&
             mouseY >= this.y - 20 && mouseY <= this.y + 40
         ) {
             this.showModal()

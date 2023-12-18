@@ -38,12 +38,6 @@ class Lysomes{
 
         let mouseX = event.clientX - res.x
         let mouseY = event.clientY - res.y
-        
-        
-        console.log(mouseX)
-        console.log(mouseY)
-        console.log(this.x)
-        console.log(this.y)
                          
         if (
             mouseX >= this.x - 20 && mouseX <= this.x + 30 &&

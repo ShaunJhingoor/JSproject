@@ -15,8 +15,48 @@ class Mitochondria {
         this.consty = this.y 
         this.changex = this.constx + 5 
         this.changey = this.constx + 5
-        
+        this.modalContent = {
+            name: "Mitochondria",
+            description: "The main role of the mitochondria is oxidative phosphorylation. Oxidative phosphorylation generates ATP by using energy released during oxidation of food. ATP is used in most biochemical and physiological processes."
+        };
+        this.handleModalClick = this.handleModalClick.bind(this)
+        this.createModal();
     }
+
+    createModal() {
+        this.modal = document.getElementById("organelleModal2");
+        this.modalName = document.getElementById("organelleName2");
+        this.modalDescription = document.getElementById("organelleDescription2");
+
+        this.modalName.textContent = this.modalContent.name;
+        this.modalDescription.textContent = this.modalContent.description;
+
+        
+        this.ctx.canvas.addEventListener("click", this.handleModalClick);
+    }
+
+    handleModalClick(event) {
+        event.stopPropagation();
+        
+        let canvas = document.getElementById("cell1");
+        let res = canvas.getBoundingClientRect();
+
+        let mouseX = event.clientX - res.x
+        let mouseY = event.clientY - res.y
+        
+                         
+        if (
+            mouseX >= this.x - 1 && mouseX <= this.x + 70 &&
+            mouseY >= this.y - 20 && mouseY <= this.y + 40
+        ) {
+            this.showModal()
+        }
+    }
+
+    showModal() {
+        this.modal.style.display = 'block';
+    }
+
     setImageSource(imageSource){
         this.image.src = imageSource
     }
