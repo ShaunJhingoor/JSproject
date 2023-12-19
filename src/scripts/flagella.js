@@ -16,7 +16,7 @@ class Flagella{
     }
 
     draw() {
-        this.ctx.drawImage(this.image,this.x,this.y,20,60)
+        this.ctx.drawImage(this.image,this.x,this.y,20,120)
     }
 
     update(){

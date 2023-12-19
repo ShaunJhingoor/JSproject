@@ -1,12 +1,11 @@
 class Plasmid{
     constructor(ctx){
         this.ctx = ctx;
-        this.x = 225;
-        this.y = 340;
-        this.radius = 20; 
-    
+        this.x = 200;
+        this.y = 320;
+        this.image = new Image();
+        this.image.onload = this.draw.bind(this)
         this.speed =.03;
-        this.rotate = 0;
         this.direction = 1;
         this.modalContent = {
             name: "Plasmid",
@@ -38,10 +37,11 @@ class Plasmid{
         let mouseX = event.clientX - res.x
         let mouseY = event.clientY - res.y
        
-                         
+        console.log(this.y)
+        console.log(mouseY)       
         if (
-            mouseX >= this.x - 1 && mouseX <= this.x + 20 &&
-            mouseY >= this.y - 1 && mouseY <= this.y + 30
+            mouseX >= this.x - 1 && mouseX <= this.x + 40 &&
+            mouseY >= this.y - 1 && mouseY <= this.y + 35 && mouseY > this.y + 20
         ) {
             this.showModal()
         }
@@ -51,19 +51,19 @@ class Plasmid{
     showModal() {
         this.modal.style.display = 'block';
     }
+
+    setImageSource(imageSource){
+        this.image.src = imageSource
+    }
+
     draw() {
-        this.ctx.beginPath();
-        this.ctx.arc(this.x, this.y, this.radius, 0, 2 * Math.PI)   
-        this.ctx.lineWidth = 7; 
-        this.ctx.strokeStyle = "rgb(92,206,250)"; 
-        this.ctx.stroke()
-    
+      this.ctx.drawImage(this.image,this.x,this.y,60,60)
     }
 
     update(){
-        this.rotate = this.rotate + this.speed * this.direction;
         this.y = this.y + this.speed * this.direction;
-        if ( this.y + 1 >= 350 || this.y <= 340 && this.rotate + 1 >=350 || this.rotate <= 0) {
+        this.y = this.y + this.speed * this.direction;
+        if ( this.x + 1 >= 205 || this.x <= 200 && this.y + 1 >=325 || this.y <= 320) {
             this.direction *= -1; 
         }
     }

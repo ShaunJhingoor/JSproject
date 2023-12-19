@@ -60,6 +60,7 @@ class Bacteria{
      
         this.flagella.setImageSource('flagella.png')
         this.nucleoid.setImageSource('nucleoid.png')
+        this.plasmid.setImageSource('plasmid.png')
         this.organelles = [this.capsule, this.cellwall, this.plasmamemembrane, 
         this.cytoplasm, this.flagella, this.plasmid, this.pilli, this.pilli1,
         this.pill2, this.pill3, this.pill4, this.pill5, this.pilli6,this.pilli7,

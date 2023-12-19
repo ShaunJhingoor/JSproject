@@ -39,8 +39,7 @@ class Ribsomes {
 
         let mouseX = event.clientX - res.x
         let mouseY = event.clientY - res.y
-        console.log(mouseY)
-        console.log(this.y)
+       
                          
         if (
             mouseX >= this.x - 1 && mouseX <= this.x + 10 &&
@@ -55,12 +54,21 @@ class Ribsomes {
     }
 
     draw() {
-       this.ctx.beginPath()
-       this.ctx.arc(this.x, this.y, 3, 0, 2 * Math.PI)
+        this.ctx.beginPath();
+        this.ctx.arc(this.x, this.y, 3, 0, 2 * Math.PI);
     
-       this.ctx.fillStyle = "red";
-       this.ctx.fill();
+ 
+        const gradient = this.ctx.createRadialGradient(
+            this.x, this.y, 0, this.x, this.y, 3
+        );
     
+        gradient.addColorStop(0, 'rgba(255, 255, 255, 0.8)');
+
+        gradient.addColorStop(1, 'rgba(255, 0, 0, 1)');
+    
+        
+        this.ctx.fillStyle = gradient;
+        this.ctx.fill();
     }
 
     update(){

@@ -9,6 +9,48 @@ class Nucleoid{
         this.y = 150;
         this.speed = 0.03
         this.direction = 1
+        this.modalContent = {
+            name: "Nucleoid",
+            description: "The nucleoid is similar to the function of the nucleus in a eukaryotic cell. Nucleoid regulates the growth, reproduction , and function of the prokaryotic cell."
+        };
+        this.handleModalClick = this.handleModalClick.bind(this)
+        this.createModal();
+    
+    }
+
+    createModal() {
+        this.modal = document.getElementById("organelleModal8");
+        this.modalName = document.getElementById("organelleName8");
+        this.modalDescription = document.getElementById("organelleDescription8");
+
+        this.modalName.textContent = this.modalContent.name;
+        this.modalDescription.textContent = this.modalContent.description;
+
+        
+        this.ctx.canvas.addEventListener("click", this.handleModalClick);
+    }
+
+    handleModalClick(event) {
+        event.stopPropagation();
+        
+        let canvas = document.getElementById("cell2");
+        let res = canvas.getBoundingClientRect();
+
+        let mouseX = event.clientX - res.x
+        let mouseY = event.clientY - res.y
+       
+                         
+        if (
+            mouseX >= this.x - 1 && mouseX <= this.x + 40 &&
+            mouseY >= this.y - 1 && mouseY <= this.y + 130
+        ) {
+            this.showModal()
+        }
+    }
+    
+
+    showModal() {
+        this.modal.style.display = 'block';
     }
 
     setImageSource(imageSource){
