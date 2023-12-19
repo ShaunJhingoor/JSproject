@@ -12,4 +12,5 @@ document.addEventListener("DOMContentLoaded", () => {
 
    const bacteria = new Bacteria(ctx1)
    bacteria.animate()
+   
 })

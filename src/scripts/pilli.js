@@ -39,8 +39,7 @@ class Pilli{
         let mouseX = event.clientX - res.x
         let mouseY = event.clientY - res.y
        
-        console.log(this.x)
-        console.log(mouseX)       
+         
         if (this.x === 300){
             if(mouseX <= this.x + 70 && mouseX > this.x + 7 &&
                 mouseY <= this.y + 70 && mouseY > this.y + 7){

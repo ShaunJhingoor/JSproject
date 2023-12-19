@@ -16,18 +16,27 @@
 
   <body>
     <h1>Cell Explorer</h1>
-   <a href="https://github.com/ShaunJhingoor/JSproject/blob/5a74ff79fea101db3d30dff3d5c1784aca42f651/index.html" id="github">Github</a>
+    
+   <a href="https://github.com/ShaunJhingoor/JSproject"><img src="github.png" id="github"></a>
 
+   <div class="container1">
+    <div id="instructions">
+      <h3>Instructions<h3>
+      <p>Welcome to an interactive learning experience. In order to use this website please click on any organelle you would like to learn about. A name and description will pop up. Once finished you can click on the x to continue learning about other organelles.</p>
+    </div>
+  </div>
 
     <div class="container">
     <div id="cellname1">Eukaryotic</div>
     <div id="cellname2">Prokaryotic</div>
     </div>
 
-    <canvas id="cell1" width="500" height="500" padding="0"></canvas>
+  
+
+    <canvas id="cell1" width="550" height="550" padding="0"></canvas>
    
     
-    <canvas id="cell2" width="500" height="500" padding="0"></canvas>
+    <canvas id="cell2" width="550" height="550" padding="0"></canvas>
 
     <div id="organelleModal" class="modal">
 
@@ -113,6 +122,19 @@
       document.getElementById("organelleModal5").style.display = "none";
   }
 </script>
+<div id="organelleModal11" class="modal11">
+  <div class="modal-content11">
+    <span class="close11" onclick="closeModal11()">&times;</span>
+    <h2 id="organelleName11"></h2>
+    <p id="organelleDescription11"></p>
+</div>
+</div>
+ 
+<script>
+  function closeModal11() {
+      document.getElementById("organelleModal11").style.display = "none";
+  }
+</script>
 
 
 
@@ -190,6 +212,22 @@
       document.getElementById("organelleModal10").style.display = "none";
   }
 </script>
+
+
+<div id="organelleModal12" class="modal12">
+  <div class="modal-content12">
+    <span class="close12" onclick="closeModal12()">&times;</span>
+    <h2 id="organelleName12"></h2>
+    <p id="organelleDescription12"></p>
+</div>
+</div>
+ 
+<script>
+  function closeModal12() {
+      document.getElementById("organelleModal12").style.display = "none";
+  }
+</script>
+
   </body>
 
 </html>

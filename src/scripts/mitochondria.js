@@ -14,7 +14,7 @@ class Mitochondria {
         this.constx = this.x 
         this.consty = this.y 
         this.changex = this.constx + 5 
-        this.changey = this.constx + 5
+        this.changey = this.consty + 5
         this.modalContent = {
             name: "Mitochondria",
             description: "The main role of the mitochondria is oxidative phosphorylation. Oxidative phosphorylation generates ATP by using energy released during oxidation of food. ATP is used in most biochemical and physiological processes."

@@ -41,8 +41,8 @@ class Flagella{
        
                
         if (
-            mouseX >= this.x - 1 && mouseX <= this.x + 40 &&
-            mouseY >= this.y - 1 && mouseY <= this.y + 35 && mouseY > this.y + 20
+            mouseX >= this.x - 1 && mouseX <= this.x + 170 &&
+            mouseY >= this.y - 1 && mouseY <= this.y + 100 && mouseY > this.y + 20
         ) {
             this.showModal()
         }
