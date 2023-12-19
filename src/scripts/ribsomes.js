@@ -10,6 +10,48 @@ class Ribsomes {
         this.consty = this.y 
         this.changex = this.constx + 5 
         this.changey = this.constx + 5
+        this.modalContent = {
+            name: "Ribsosome",
+            description: "The main function of ribosomes is protein synthesis. Ribosomes translate mRNA to protein with the assistance of tRNA. Protein is essential for a multitude of cell functions"
+        };
+        this.handleModalClick = this.handleModalClick.bind(this)
+        this.createModal();
+    
+    }
+
+    createModal() {
+        this.modal = document.getElementById("organelleModal7");
+        this.modalName = document.getElementById("organelleName7");
+        this.modalDescription = document.getElementById("organelleDescription7");
+
+        this.modalName.textContent = this.modalContent.name;
+        this.modalDescription.textContent = this.modalContent.description;
+
+        
+        this.ctx.canvas.addEventListener("click", this.handleModalClick);
+    }
+
+    handleModalClick(event) {
+        event.stopPropagation();
+        
+        let canvas = document.getElementById("cell2");
+        let res = canvas.getBoundingClientRect();
+
+        let mouseX = event.clientX - res.x
+        let mouseY = event.clientY - res.y
+        console.log(mouseY)
+        console.log(this.y)
+                         
+        if (
+            mouseX >= this.x - 1 && mouseX <= this.x + 10 &&
+            mouseY >= this.y - 1 && mouseY <= this.y + 10
+        ) {
+            this.showModal()
+        }
+    }
+
+    showModal() {
+        this.modal.style.display = 'block';
     }
 
     draw() {
