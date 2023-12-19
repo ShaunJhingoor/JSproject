@@ -13,7 +13,7 @@ class Pilli{
     }
 
     draw(){
-        this.ctx.fillStyle = "rgb(90,188,134)";
+        this.ctx.fillStyle = "black";
 
         for (let i = 0; i < 40; i++) {
             const height = 2 * Math.sin(this.time + i / 4);

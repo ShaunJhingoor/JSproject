@@ -64,7 +64,7 @@ class Ribsomes {
     
         gradient.addColorStop(0, 'rgba(255, 255, 255, 0.8)');
 
-        gradient.addColorStop(1, 'rgba(255, 0, 0, 1)');
+        gradient.addColorStop(1, 'rgba(255, 0, 0, 0.5)');
     
         
         this.ctx.fillStyle = gradient;
