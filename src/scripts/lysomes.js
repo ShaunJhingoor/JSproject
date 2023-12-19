@@ -12,7 +12,7 @@ class Lysomes{
         this.direction = 1
         this.modalContent = {
             name: "Lysomes",
-            description: "This is a Lysome. It protects the cell from foreign material and destroys the foreign material"
+            description: "This is a Lysome. Lysome contain digestive enyzme that are capable of breaking down old and tired organelles. Also, lysomes can breakdown protein, nucleic acid, carbohydrates, and lipids."
         };
         this.handleModalClick = this.handleModalClick.bind(this)
         this.createModal();

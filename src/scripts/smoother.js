@@ -37,10 +37,15 @@ class Smoother{
 
         let mouseX = event.clientX - res.x
         let mouseY = event.clientY - res.y
-                           
+                           console.log(this.x)
+                          
+                           console.log(mouseX)
+                          
+                           console.log(this.y)
+                           console.log(mouseY)
         if (
-            mouseX >= this.x - 1 && mouseX <= this.x + 40 &&
-            mouseY >= this.y - 1 && mouseY <= this.y + 40
+            mouseX >= this.x - 1 && mouseX <= this.x + 100 &&
+            mouseY >= this.y - 1 && mouseY <= this.y + 75 && mouseY > this.y + 25
         ) {
             this.showModal()
         }
