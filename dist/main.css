@@ -8,11 +8,13 @@ h1 {
   font-style: kokonor;
 }
 
-h2 {
-  position: fixed;
-  top: 10px;
-  right: 10px;
+#github {
+  position: absolute;
+  top: 1px;
+  right: 50px;
   margin: 0;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 body {
@@ -20,7 +22,7 @@ body {
 }
 
 #cell1 {
-  position: relative;
+  position: re;
   background-color: white;
   border-radius: 15px;
   border: 10px solid;
