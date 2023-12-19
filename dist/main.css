@@ -5,7 +5,7 @@ h1 {
   text-align: center;
   color: black;
   font-size: 100px;
-  font-style: italic;
+  font-style: kokonor;
 }
 
 body {
@@ -14,7 +14,7 @@ body {
 
 #cell1 {
   position: relative;
-  background-color: whitesmoke;
+  background-color: white;
   border: 10px solid;
   border-color: black;
   margin-top: 50px;
@@ -23,7 +23,7 @@ body {
 
 #cell2 {
   position: relative;
-  background-color: whitesmoke;
+  background-color: white;
   border: 10px solid;
   border-color: black;
   margin-top: 50px;
@@ -43,6 +43,7 @@ body {
   max-width: 800px;
   color: black;
   font-weight: bolder;
+  font-style: kokonor;
   text-align: center;
   font-size: 50px;
 }
@@ -56,6 +57,7 @@ body {
   max-width: 800px;
   color: black;
   font-weight: bolder;
+  font-style: kokonor;
   text-align: center;
   font-size: 50px;
 }

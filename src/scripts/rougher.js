@@ -55,7 +55,7 @@ class Rougher{
 
     draw() {
         // this.ctx.rotate(5)
-        this.ctx.drawImage(this.image,this.x,this.y,120,80)
+        this.ctx.drawImage(this.image,this.x,this.y,120,70)
     }
 
     update(){

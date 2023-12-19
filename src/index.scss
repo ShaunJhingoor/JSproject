@@ -3,7 +3,7 @@ h1{
     text-align: center;
     color: black;
     font-size: 100px;
-    font-style:italic;
+    font-style: kokonor;
 }
 
 body{
@@ -13,7 +13,7 @@ body{
 #cell1 {
     position: relative; 
     // display: inline-block;
-    background-color: whitesmoke;
+    background-color: white;
     // width: 650px;
     // height: 600px;
     border: 10px solid;
@@ -24,7 +24,7 @@ body{
 
 #cell2 {
     position: relative; 
-    background-color: whitesmoke;
+    background-color: white;
     // width: 650px;
     // height: 600px;
     border: 10px solid;
@@ -47,6 +47,7 @@ body{
     max-width: 800px;
     color: black;
     font-weight:bolder;
+    font-style: kokonor;
     text-align: center;
     font-size:50px;
   
@@ -64,6 +65,7 @@ body{
     color: black;
     // background-color: yellow;
     font-weight: bolder;
+    font-style: kokonor;
     text-align: center;
     font-size: 50px;
 }
