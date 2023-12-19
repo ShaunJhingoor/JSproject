@@ -48,12 +48,12 @@ class Capsule{
         // mouseX<=< this.x + 80 && mousx >this.x -80
         // mousey<= this.y + 200 && mousey >= this.y -200
         
-        // if (
-        //     mouseX <= this.x + 80 && mouseX > this.x - 80 && 
-        //     mouseY <= this.y + 200 && mouseY >= thiys.y - 10
-        // ) {
-        //     this.showModal();
-        // }
+        if (
+            mouseX <= this.x + 80 && mouseX > this.x - 80 && 
+            mouseY <= this.y + 200 && mouseY >= thiys.y - 10
+        ) {
+            this.showModal();
+        }
     }
     
 

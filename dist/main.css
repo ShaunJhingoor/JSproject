@@ -4,6 +4,7 @@
 h1 {
   text-align: center;
   color: rgb(22, 22, 22);
+  text-shadow: 4px 4px 4px rgb(115, 247, 251);
   font-size: 90px;
   font-family: "Calibri", sans-serif;
 }
@@ -18,12 +19,15 @@ h1 {
 }
 
 body {
-  background: linear-gradient(to top, #010101, #848484);
+  background-image: url("../labbackground.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 #cell1 {
   position: relative;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(248, 247, 243, 0.9);
   border: 10px solid;
   border-color: rgb(22, 22, 22);
   margin-top: 50px;
@@ -34,7 +38,7 @@ body {
 
 #cell2 {
   position: relative;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(248, 247, 243, 0.9);
   border: 10px solid;
   border-color: rgb(22, 22, 22);
   margin-top: 50px;
@@ -59,6 +63,7 @@ body {
   font-family: "Calibri", sans-serif;
   text-align: center;
   font-size: 50px;
+  text-shadow: 4px 4px 4px rgb(219, 146, 120);
 }
 
 #cellname2 {
@@ -73,6 +78,7 @@ body {
   font-family: "Calibri", sans-serif;
   text-align: center;
   font-size: 50px;
+  text-shadow: 4px 4px 4px rgb(185, 101, 141);
 }
 
 .modal {
@@ -469,9 +475,12 @@ body {
 }
 
 #instructions {
-  color: rgb(22, 22, 22);
+  color: white;
   border: #010101 solid;
+  border-radius: 20px;
   border-width: 10px;
+  border-color: black;
+  background: linear-gradient(to top, rgb(82, 105, 113), rgb(3, 93, 116));
   font-family: "Calibri", sans-serif;
   text-align: center;
 }
