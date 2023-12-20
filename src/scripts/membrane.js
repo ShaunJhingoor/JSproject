@@ -8,7 +8,7 @@ class Membrane {
         this.speed = 0.05;
         this.direction = 1;
         this.modalContent = {
-            name: "Plama Membrane (PM)",
+            name: "Plasma Membrane (PM)",
             description: "The plasma membrane (PM) separates the cell interior from the exterior. The PM traffics the movement of molecules and functions in cell-to-cell signaling and cell adhesion."
         };
         this.handleModalClick = this.handleModalClick.bind(this)
