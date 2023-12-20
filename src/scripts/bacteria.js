@@ -7,6 +7,9 @@ import Plasmid from "./plasmid";
 import Pilli from "./pilli";
 import Nucleoid from "./nucleoid";
 import Ribsomes from "./ribsomes";
+import CapsuleBox from "./capsulebox";
+import Cellwallbox from "./cellwallbox";
+import PlasmaMembranebox from "./plasmamembranbox";
 class Bacteria{
     constructor(ctx){
         this.ctx = ctx
@@ -57,7 +60,11 @@ class Bacteria{
         this.pilli9 = new Pilli(ctx, 90, 255, .04,1.5)
         this.pilli10 = new Pilli(ctx,110, 306, .08,1)
         this.pilli11 = new Pilli(ctx, 90 , 357, .04,1.5)
-     
+        
+        this.capsulebox = new CapsuleBox(this.ctx)
+        this.cellwallbox = new Cellwallbox(this.ctx)
+        this.plasmamemembranebox = new PlasmaMembranebox(this.ctx)
+
         this.flagella.setImageSource('flagella.png')
         this.nucleoid.setImageSource('nucleoid.png')
         this.plasmid.setImageSource('plasmid.png')
@@ -68,7 +75,7 @@ class Bacteria{
         this.ribsomes, this.ribsomes1,this.ribsomes2,this.ribsomes3,this.ribsomes4, this.ribsomes5,
         this.ribsomes6, this.ribsomes7, this.ribsomes8, this.ribsomes9, this.ribsomes10, this.ribsomes11,
         this.ribsomes12, this.ribsomes13, this.ribsomes14, this.ribsomes15, this.ribsomes16, this.ribsomes17, this.ribsomes18,
-        this.ribsomes19
+        this.ribsomes19, this.capsulebox, this.cellwallbox, this.plasmamemembranebox
     ]
     }
 

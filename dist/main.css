@@ -479,6 +479,64 @@ body {
   cursor: pointer;
 }
 
+.modal13 {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content13 {
+  background-color: rgba(36, 37, 36, 0.895);
+  box-shadow: 0 0 40px rgba(250, 251, 251, 0.981);
+  color: white;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  border-radius: 15px;
+  width: 80%;
+  text-align: center;
+}
+
+.close13:hover {
+  color: red;
+  cursor: pointer;
+}
+
+.modal14 {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content14 {
+  background-color: rgba(36, 37, 36, 0.895);
+  box-shadow: 0 0 40px rgba(250, 251, 251, 0.981);
+  color: white;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  border-radius: 15px;
+  width: 80%;
+  text-align: center;
+}
+
+.close14:hover {
+  color: red;
+  cursor: pointer;
+}
+
 .container1 {
   position: relative;
   text-align: center;

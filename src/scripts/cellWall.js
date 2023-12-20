@@ -25,7 +25,7 @@ class Cellwall{
     
         this.ctx.lineTo(this.x - this.width / 2, this.y - this.height / 2);
 
-        this.ctx.strokeStyle = "blue";
+        this.ctx.strokeStyle = "orange";
         this.ctx.lineWidth = 5;
 
         this.ctx.closePath();

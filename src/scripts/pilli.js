@@ -11,7 +11,7 @@ class Pilli{
         this.width = width 
         this.modalContent = {
             name: "Pilli",
-            description: "A prokaryotic cell can have one or several flagella. Flagella are primarily used for movement. Propels a prokaryotic cell by spinning in a corkscrew like fashion."
+            description: "Pilli can help with movement, but their main function is adherence to surfaces. Adherence to surfaces help with infection."
         };
         this.handleModalClick = this.handleModalClick.bind(this)
         this.createModal();
@@ -41,8 +41,8 @@ class Pilli{
        
          
         if (this.x === 300){
-            if(mouseX <= this.x + 75 && mouseX > this.x + 7 &&
-                mouseY <= this.y + 75 && mouseY > this.y + 7){
+            if(mouseX <= this.x + 65 && mouseX > this.x + 7 &&
+                mouseY <= this.y + 65 && mouseY > this.y + 7){
                     this.showModal()
                 }
             }
