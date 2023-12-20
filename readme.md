@@ -1,4 +1,4 @@
-# Cell Explorer Demo
+# Cell Explorer 
 
 ## BackGround
 In this demo users will be able to have a fun learning experience. The user will be able to hover and click on organelles of both prokaryotic cell and eukaryotic cell. Upon hover user will see the name of each organelle. Upon click user will be able to see a description of each organelle 
@@ -14,7 +14,7 @@ In this demo, users can:
 - Explore eukaryotic cells with a visual representation that the user can dynamically interact with
 - Explore prokaryotic cells with a visual representation that the user can dynamically interact with
 - Side by side visual comparsion of prokaryotic and eukaryotic cells
-- There is a nav link that user can click and go to my github
+- There is a nav link that user can click and go to my github and linkedin
 
 ### Technologies, libaries, APIs 
 - Javascript

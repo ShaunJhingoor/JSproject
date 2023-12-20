@@ -68,7 +68,7 @@ body {
   position: absolute;
   top: 50%;
   left: 32%;
-  transform: translate(-75%, -50%);
+  transform: translate(-70%, -50%);
   padding: 10px;
   max-width: 800px;
   color: rgb(22, 22, 22);
@@ -83,7 +83,7 @@ body {
   position: absolute;
   top: 50%;
   left: 65%;
-  transform: translate(-50%, -50%);
+  transform: translate(-30%, -50%);
   padding: 10px;
   max-width: 800px;
   color: rgb(22, 22, 22);

@@ -38,14 +38,6 @@ body{
 }
 
 #cell1 {
-    // position: relative;
-    // background: linear-gradient(45deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
-    // border: 10px solid;
-    // border-color: rgb(22, 22, 22);
-    // margin-top: 50px;
-    // margin-left: 120px;
-    // border-radius: 50%;
-    // box-shadow: 0 0 20px rgba(255, 255, 255, 0.7), 0 0 40px rgb(72, 72, 72);
     position:relative; 
     background-color: rgb(248, 247, 243,0.9);
     border: 10px solid;
@@ -74,7 +66,7 @@ body{
     position: absolute;
     top: 50%;
     left: 32%;
-    transform: translate(-75%, -50%);
+    transform: translate(-70%, -50%);
     padding: 10px;
     max-width: 800px;
     color: rgb(22, 22, 22);
@@ -91,7 +83,7 @@ body{
     position: absolute;
     top: 50%;
     left: 65%;
-    transform: translate(-50%, -50%);
+    transform: translate(-30%, -50%);
     padding: 10px;
     max-width: 800px;
     color: rgb(22, 22, 22);
