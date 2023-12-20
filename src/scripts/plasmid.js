@@ -39,7 +39,7 @@ class Plasmid{
        
              
         if (
-            mouseX >= this.x - 1 && mouseX <= this.x + 40 &&
+            mouseX >= this.x - 1 && mouseX <= this.x + 65 &&
             mouseY >= this.y - 1 && mouseY <= this.y + 35 && mouseY > this.y + 20
         ) {
             this.showModal()

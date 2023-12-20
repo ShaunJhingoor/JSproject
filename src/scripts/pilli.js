@@ -41,14 +41,14 @@ class Pilli{
        
          
         if (this.x === 300){
-            if(mouseX <= this.x + 70 && mouseX > this.x + 7 &&
-                mouseY <= this.y + 70 && mouseY > this.y + 7){
+            if(mouseX <= this.x + 75 && mouseX > this.x + 7 &&
+                mouseY <= this.y + 75 && mouseY > this.y + 7){
                     this.showModal()
                 }
             }
         if(this.x <=110){
-            if (mouseX >= this.x - 1 && mouseX <= this.x + 35 &&
-            mouseY >= this.y - 1 && mouseY <= this.y + 35){
+            if (mouseX >= this.x - 1 && mouseX <= this.x + 45 &&
+            mouseY >= this.y - 1 && mouseY <= this.y + 45){
                 this.showModal()
         }
     }
