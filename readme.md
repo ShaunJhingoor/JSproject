@@ -160,6 +160,7 @@
 - HTML
 - SCSS 
 - Java Script
+- Google fonts
 
 
 # Implementation Timeline 
