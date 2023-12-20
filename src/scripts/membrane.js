@@ -8,8 +8,8 @@ class Membrane {
         this.speed = 0.05;
         this.direction = 1;
         this.modalContent = {
-            name: "Plama Membrane",
-            description: "The plasma membrane separates the interior of the cell from the outside environment. The cell membrane is a phospholipid bilayer that process hydrophobic and hydrophilic properties, which help with the cells ability to only allow specific things into and out of the cell."
+            name: "Plama Membrane (PM)",
+            description: "The plasma membrane (PM) separates the cell interior from the exterior. The PM traffics the movement of molecules and functions in cell-to-cell signaling and cell adhesion."
         };
         this.handleModalClick = this.handleModalClick.bind(this)
         this.createModal();
