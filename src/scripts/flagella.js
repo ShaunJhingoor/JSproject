@@ -63,7 +63,7 @@ class Flagella{
 
     update(){
         this.x = this.x + this.speed * this.direction;
-        // this.y = this.y + this.speed * this.direction;
+       
         if (this.x + 1 >= 225 || this.x <= 220) {
             this.direction *= -1; 
         }

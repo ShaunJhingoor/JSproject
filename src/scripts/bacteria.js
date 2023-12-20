@@ -45,7 +45,6 @@ class Bacteria{
         this.ribsomes18 = new Ribsomes(ctx,280,240,0.043)
         this.ribsomes19 = new Ribsomes(ctx,260,140,.032)
 
-// x =165 left  x=280 right top =65 bottom = 430
         this.pilli = new Pilli(ctx, 300, 220,.05,1)
         this.pilli1 = new Pilli(ctx, 300, 170,.06,1.3)
         this.pill2 = new Pilli(ctx, 300, 110, .07,1.7)

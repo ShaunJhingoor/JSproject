@@ -54,13 +54,13 @@ class Rougher{
     }
 
     draw() {
-        // this.ctx.rotate(5)
+       
         this.ctx.drawImage(this.image,this.x,this.y,120,70)
     }
 
     update(){
             this.x = this.x + this.speed * this.direction;
-            // this.y = this.y + this.speed * this.direction;
+            
             if (this.x + 1 >= 205|| this.x <= 200) {
                 this.direction *= -1; 
             }

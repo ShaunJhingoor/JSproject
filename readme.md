@@ -155,6 +155,11 @@
         }
     }
     ```
+# Technologies used
+- Canvas 
+- HTML
+- SCSS 
+
 
 # Implementation Timeline 
 **Thursday and Friday** 

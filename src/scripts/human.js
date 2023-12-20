@@ -33,7 +33,6 @@ class Human{
         this.nucleus.setImageSource('nucleus.png')
         this.smoothER.setImageSource('SmoothER.png')
         this.lysomes.setImageSource('Lysomes.png')
-        // this.pathogen.setImageSource('pathogen.png')
 
         this.organelles = [this.cytoplasm, this.membrane,this.mitochondria, this.mitochondria1, this.mitochondria2,this.nucleus, this.roughER, this.smoothER, this.golgi, this.lysomes ]
     }
