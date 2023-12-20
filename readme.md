@@ -1,5 +1,5 @@
 # Cell Explorer 
-<a href="https://shaunjhingoor.github.io/JSproject/">Cell Explorer</a> is a 2d interactive demo of a prokaryotic cell and eukaryotic. This demo allows users to look at two different cells side by side and compare them. Also, allows users to interact with the demo and gain knowledge of what each organelle does within the cell contained in our body, and the cell trying to invade our body.
+<a href="https://shaunjhingoor.github.io/JSproject/">Cell Explorer</a> is a 2D interactive demo of a prokaryotic cell and eukaryotic. This demo allows users to look at two different cells side by side and compare them. Also, allows users to interact with the demo and gain knowledge of what each organelle does within the cell contained in our body, and the cell trying to invade our body.
 
 ![Alt text](image-1.png)
 <!-- ### Wireframe 
