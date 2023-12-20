@@ -11,7 +11,7 @@ class Lysomes{
         this.speed = .05
         this.direction = 1
         this.modalContent = {
-            name: "Lysomes",
+            name: "Lysosomes",
             description: " Lysosomes digest or break down food, cells, or foreign objects in the cell via a process called phagocytosis (“cell eating”). Without these, there would be a buildup of waste and the inability to reuse molecules. This would lead to cell malfunction and therefore disease."
         };
         this.handleModalClick = this.handleModalClick.bind(this)

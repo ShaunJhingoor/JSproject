@@ -13,9 +13,6 @@ class Membrane {
         };
         this.handleModalClick = this.handleModalClick.bind(this)
         this.createModal();
-        //center of circle - radius 
-        //cent of circle x  - radius 
-        //x-x ^2 + y - y^2 = res Math.sqrtres = 
     }
 
     createModal() {
