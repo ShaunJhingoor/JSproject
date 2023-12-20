@@ -159,6 +159,7 @@
 - Canvas 
 - HTML
 - SCSS 
+- Java Script
 
 
 # Implementation Timeline 
