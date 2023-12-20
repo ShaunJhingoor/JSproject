@@ -12,7 +12,7 @@ class Lysomes{
         this.direction = 1
         this.modalContent = {
             name: "Lysomes",
-            description: "This is a Lysome. Lysome contain digestive enyzme that are capable of breaking down old and tired organelles. Also, lysomes can breakdown protein, nucleic acid, carbohydrates, and lipids."
+            description: " Lysosomes digest or break down food, cells, or foreign objects in the cell via a process called phagocytosis (“cell eating”). Without these, there would be a buildup of waste and the inability to reuse molecules. This would lead to cell malfunction and therefore disease."
         };
         this.handleModalClick = this.handleModalClick.bind(this)
         this.createModal();

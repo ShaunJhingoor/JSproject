@@ -10,8 +10,8 @@ class Smoother{
         this.speed = .03; 
         this.direction = 1
         this.modalContent = {
-            name: "Smooth Endoplasmic Reticulum",
-            description: "The smooth endoplasmic reticulum main function is to synthesize lipids, phospholids such as those in the plasma membrane and in steriods"
+            name: "Smooth Endoplasmic Reticulum(SER)",
+            description: "The SER lacks ribosomes and parts of the SER are continuous with the RER. The SER stores calcium ions, degrades glycogen, synthesizes lipids and steroids, and tags small toxic molecules for easier removal from the cell."
         };
         this.handleModalClick = this.handleModalClick.bind(this)
         this.createModal();

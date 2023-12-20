@@ -16,8 +16,8 @@ class Mitochondria {
         this.changex = this.constx + 5 
         this.changey = this.consty + 5
         this.modalContent = {
-            name: "Mitochondria",
-            description: "The main role of the mitochondria is oxidative phosphorylation. Oxidative phosphorylation generates ATP by using energy released during oxidation of food. ATP is used in most biochemical and physiological processes."
+            name: "Mitochondrion (s.)",
+            description: "Mitochondria (p.) are the powerhouse of the cells. They facilitate the citric acid cycle, oxidative phosphorylation, and the respiratory chain, which provide copious energy for cellular functions. They can divide and reproduce independent to the nucleus and are thought to have been acquired by endosymbiosis, where one cell is engulfed by another, and these two previously independent organisms exist in mutual benefit."
         };
         this.handleModalClick = this.handleModalClick.bind(this)
         this.createModal();

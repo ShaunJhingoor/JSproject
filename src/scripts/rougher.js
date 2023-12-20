@@ -10,8 +10,8 @@ class Rougher{
         this.speed = .03; 
         this.direction = 1;
         this.modalContent = {
-            name: "Rough Endoplasmic Reticulum",
-            description: "The rough endoplasmic reticulum contains its own ribosomes. The rough endoplasmic reticulum main function is to produce proteins for the rest of the cell to function. This includes protein folding and sorting"
+            name: "Rough Endoplasmic Reticulum (RER)",
+            description: "The RER are called rough because there are ribosomes on its surface. The RER receives, modifies, tags, and packages proteins for transport. They are pinched off into membrane-enclosed vesicles for transport."
         };
         this.handleModalClick = this.handleModalClick.bind(this)
         this.createModal();

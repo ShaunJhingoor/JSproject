@@ -12,7 +12,7 @@ class Ribsomes {
         this.changey = this.constx + 5
         this.modalContent = {
             name: "Ribsosome",
-            description: "The main function of ribosomes is protein synthesis. Ribosomes translate mRNA to protein with the assistance of tRNA. Protein is essential for a multitude of cell functions"
+            description: "Ribosomes are the sites of protein synthesis. In prokaryotic cells, they freely float throughout the cytoplasm."
         };
         this.handleModalClick = this.handleModalClick.bind(this)
         this.createModal();

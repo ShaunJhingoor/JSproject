@@ -11,7 +11,7 @@ class Golgi{
         this.direction = 1
         this.modalContent = {
             name: "Golgi",
-            description: "The golgi is responsible for a multitude of function within the cell. One function of the golgi is to modify protein and lipids receieved by the endoplasmic reticulum. The proteins and lipids are by modify by a process known as glycosylation. Then the golgi sorts and packages these modified molecules into vesciles "
+            description: "The Golgi receives proteins from the Rough Endoplasmic Reticulum and edits and packages proteins and carbohydrates for use in and out of the cell. These are packaged within vesicles and SNARES are the markers that allow these vesicles to be received or delivered to the appropriate locations. "
         };
         this.handleModalClick = this.handleModalClick.bind(this)
         this.createModal();

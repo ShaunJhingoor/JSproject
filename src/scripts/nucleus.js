@@ -11,7 +11,7 @@ class Nucleus{
         this.direction = 1
         this.modalContent = {
             name: "Nucleus",
-            description: "The nucleus is the cell's control center. DNA replication, transcription, and RNA processing takes place in the nucleus. The nucleus is surrounded by a nuclear envelope that separates the nucleus from the cytoplasm"
+            description: "The nucleus of a cell, centrally located, is enclosed by a double membrane. It is where most of the cell’s DNA is found, and is the site of DNA replication."
         };
         this.handleModalClick = this.handleModalClick.bind(this)
         this.createModal();
