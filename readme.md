@@ -7,6 +7,13 @@
 ![Alt text](image.png) -->
 # Functionality
 ### In Cell Explorer, users are able to 
+    
+   
+  <video width="600" height="600" autoplay loop>
+  <source src="cellanimation.mp4" type="video/mp4">
+</video>
+
+
  * Compare dynamically [moving](cellanimation.mp4) eukaryotic and prokaryotic cell via 
     - In order to get these animations to make the cell look like it is dynamically moving 
     1. Had to make a canvas drawing which is show in the picture and video as a white somewhat translucent circle. This was done using scss and HTML canvas
