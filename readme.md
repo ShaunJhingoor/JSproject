@@ -4,7 +4,7 @@
 ![Alt text](image-1.png)
 <!-- ### Wireframe 
  <!-- [moving](cellanimation.mp4) -->
-<!-- ![Alt text](image.png) --> -->
+<!-- ![Alt text](image.png) --> 
 # Functionality
 ### In Cell Explorer, users are able to 
    
