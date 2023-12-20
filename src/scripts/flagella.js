@@ -10,8 +10,8 @@ class Flagella{
         this.speed = 0.05
         this.direction = 1
         this.modalContent = {
-            name: "Flagella",
-            description: "A prokaryotic cell can have one or several flagella. Flagella are primarily used for movement. Propels a prokaryotic cell by spinning in a corkscrew like fashion."
+            name: "Flagellum (s.)",
+            description: "Flagella (p.) sometimes look like corkscrews and are utilized in movement. They propel the cell and are powered by a motor protein attached to the cell membrane. Can be one or multiple flagella"
         };
         this.handleModalClick = this.handleModalClick.bind(this)
         this.createModal();

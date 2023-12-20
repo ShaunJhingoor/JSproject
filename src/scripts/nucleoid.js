@@ -11,7 +11,7 @@ class Nucleoid{
         this.direction = 1
         this.modalContent = {
             name: "Nucleoid",
-            description: "The nucleoid is similar to the function of the nucleus in a eukaryotic cell. Nucleoid regulates the growth, reproduction , and function of the prokaryotic cell."
+            description: "The nucleoid is similar to the nucleus of the eukaryotic cell as the cell’s chromosomal genetic material, though nucleoids are not enclosed in a membrane. This genetic material dictates growth, reproduction, and function of the cell."
         };
         this.handleModalClick = this.handleModalClick.bind(this)
         this.createModal();

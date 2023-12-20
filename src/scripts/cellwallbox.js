@@ -7,8 +7,8 @@ constructor(ctx) {
     this.speed = 0.05;
     this.direction = 1;
 this.modalContent = {
-    name: "Cellwall",
-    description: "The cell membrane separates the interior of the cell from the outside environment. The cell membrane is a phospholipid bilayer that process hydrophobic and hydrophilic properties, which help with the cells ability to only allow specific things into and out of the cell."
+    name: "Cell wall",
+    description: "  The cell wall is a relatively rigid enclosure that provides structure, and helps limit cells bursting. Not all prokaryotes have a cell wall."
 };
 this.handleModalClick = this.handleModalClick.bind(this)
 this.createModal();

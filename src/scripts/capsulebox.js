@@ -8,7 +8,7 @@ class CapsuleBox{
         this.direction = 1;
     this.modalContent = {
         name: "Capsule",
-        description: "The cell membrane separates the interior of the cell from the outside environment. The cell membrane is a phospholipid bilayer that process hydrophobic and hydrophilic properties, which help with the cells ability to only allow specific things into and out of the cell."
+        description: " A capsule protects the prokaryotic cell from desiccation and defends against attack ie: by white blood cells. Not all prokaryotes have a capsule."
     };
     this.handleModalClick = this.handleModalClick.bind(this)
     this.createModal();

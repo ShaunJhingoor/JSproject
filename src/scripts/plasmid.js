@@ -9,7 +9,7 @@ class Plasmid{
         this.direction = 1;
         this.modalContent = {
             name: "Plasmid",
-            description: "Plasmids play a vital role in exchanging genes between bacterial cells. This allows bacteria to transfer there genes from one host to another. Allowing bacteria to spread resistance faster."
+            description: "Plasmids are extrachromosomal genetic material that replicates independently to the main chromosome(s) and typically give the prokaryote bonus capabilities such as resistance to antibiotics, or the ability to break down certain substances such as oil among other capacities. Plasmids can be shared to other cells which would enable fellow cells the same skills."
         };
         this.handleModalClick = this.handleModalClick.bind(this)
         this.createModal();

@@ -7,8 +7,8 @@ constructor(ctx) {
         this.speed = 0.05;
         this.direction = 1;
     this.modalContent = {
-        name: "Plasma Membrane",
-        description: "The cell membrane separates the interior of the cell from the outside environment. The cell membrane is a phospholipid bilayer that process hydrophobic and hydrophilic properties, which help with the cells ability to only allow specific things into and out of the cell."
+        name: "Cell membrane",
+        description: "The cell membrane encloses the cell and creates a distinct environment within. It regulates passage of materials in and out of the cell."
     };
     this.handleModalClick = this.handleModalClick.bind(this)
     this.createModal();
@@ -59,7 +59,7 @@ constructor(ctx) {
        
         this.ctx.fillStyle = 'green';
         this.ctx.font = '14px myFont';
-        this.ctx.fillText('Plasma Membrane', this.x + 10, this.y + 20); 
+        this.ctx.fillText('Cell Membrane', this.x + 10, this.y + 20); 
     }
     
     animate() {

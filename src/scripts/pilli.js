@@ -10,8 +10,8 @@ class Pilli{
         this.time = 0
         this.width = width 
         this.modalContent = {
-            name: "Pilli",
-            description: "Pilli can help with movement, but their main function is adherence to surfaces. Adherence to surfaces help with infection."
+            name: "Pilus",
+            description: "Pili can help with movement, but their main function is attach and provide a bridge to other cells to transmit genetic material."
         };
         this.handleModalClick = this.handleModalClick.bind(this)
         this.createModal();
