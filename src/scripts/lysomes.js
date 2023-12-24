@@ -1,10 +1,10 @@
 class Lysomes{
-    constructor(ctx) {
+    constructor(ctx,pathogen) {
         this.ctx = ctx 
 
         this.image = new Image();
         this.image.onload = this.draw.bind(this)
-
+        this.pathogen = pathogen
         
         this.x = 120;
         this.y = 340;
@@ -71,6 +71,15 @@ class Lysomes{
     }
 
     animate(){
+        if (
+            this.x + 20 >= this.pathogen.x &&
+            this.x <= this.pathogen.x + 25 &&
+            this.y + 20 >= this.pathogen.y &&
+            this.y <= this.pathogen.y + 25
+        )
+        {
+            this.pathogen.remove();
+        }
         this.draw()
         this.update()
   }

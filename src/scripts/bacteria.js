@@ -10,6 +10,8 @@ import Ribsomes from "./ribsomes";
 import CapsuleBox from "./capsulebox";
 import Cellwallbox from "./cellwallbox";
 import PlasmaMembranebox from "./plasmamembranbox";
+
+
 class Bacteria{
     constructor(ctx){
         this.ctx = ctx
