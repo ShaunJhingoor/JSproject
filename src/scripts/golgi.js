@@ -37,11 +37,11 @@ class Golgi{
 
         let mouseX = event.clientX - res.x
         let mouseY = event.clientY - res.y
-        
+     
                          
         if (
-            mouseX >= this.x - 1 && mouseX <= this.x + 70 &&
-            mouseY >= this.y - 20 && mouseY <= this.y + 40
+            mouseX >= this.x - 1 && mouseX <= this.x + 90 &&
+            mouseY >= this.y + 10 && mouseY <= this.y + 40
         ) {
             this.showModal()
         }
