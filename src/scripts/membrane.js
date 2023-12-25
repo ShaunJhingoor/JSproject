@@ -41,8 +41,9 @@ class Membrane {
      
         const distance = (mouseX- this.x)**2 + (mouseY - this.y)**2
         const square = Math.sqrt(distance)
-      
-        if(square <= this.radius + 12 && square >= this.radius - 20){
+        console.log(this.radius)
+        console.log(square)
+        if(square <= this.radius + 10 && square >= this.radius - 15){
            
             this.showModal();
         }

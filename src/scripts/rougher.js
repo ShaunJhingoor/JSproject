@@ -37,10 +37,10 @@ class Rougher{
 
         let mouseX = event.clientX - res.x
         let mouseY = event.clientY - res.y
-                         
+      
         if (
-            mouseX >= this.x + 25 && mouseX <= this.x + 57 &&
-            mouseY >= this.y - 1 && mouseY <= this.y + 70
+            mouseX >= this.x - 1 && mouseX <= this.x + 120 &&
+            mouseY >= this.y + 20 && mouseY <= this.y + 47
         ) {
             this.showModal()
         }

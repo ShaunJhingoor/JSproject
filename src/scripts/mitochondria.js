@@ -47,7 +47,7 @@ class Mitochondria {
                          
         if (
             mouseX >= this.x - 1 && mouseX <= this.x + 70 &&
-            mouseY >= this.y - 20 && mouseY <= this.y + 40
+            mouseY >= this.y + 15 && mouseY <= this.y + 30
         ) {
             this.showModal()
         }

@@ -8,6 +8,7 @@ import Golgi from "./golgi";
 import Lysomes from "./lysomes";
 import Pathogen from "./pathogen";
 
+
 class Human{
     constructor(ctx){
         this.ctx = ctx 
@@ -26,7 +27,6 @@ class Human{
         this.pathogen = new Pathogen(this.ctx)
         this.lysomes = new Lysomes(this.ctx, this.pathogen)
         
-
         this.golgi.setImageSource('golgi.png')
         this.roughER.setImageSource('RoughER.png')
         this.mitochondria.setImageSource('mitochondria.png')
@@ -36,9 +36,11 @@ class Human{
         this.smoothER.setImageSource('SmoothER.png')
         this.pathogen.setImageSource('pathogen.png')
         this.lysomes.setImageSource('Lysomes.png')
+
        
 
-        this.organelles = [this.cytoplasm, this.membrane,this.mitochondria, this.mitochondria1, this.mitochondria2,this.nucleus, this.roughER, this.smoothER, this.golgi, this.pathogen, this.lysomes]
+        this.organelles = [this.cytoplasm, this.membrane,this.mitochondria, this.mitochondria1, this.mitochondria2,
+            this.nucleus, this.roughER, this.smoothER, this.golgi, this.pathogen, this.lysomes]
     }
 
     animate(){
