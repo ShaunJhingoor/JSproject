@@ -41,8 +41,8 @@ class Nucleoid{
        
                          
         if (
-            mouseX >= this.x - 1 && mouseX <= this.x + 40 &&
-            mouseY >= this.y - 1 && mouseY <= this.y + 130
+            mouseX >= this.x + 20 && mouseX <= this.x + 60 &&
+            mouseY >= this.y + 10 && mouseY <= this.y + 150
         ) {
             this.showModal()
         }
