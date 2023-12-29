@@ -4,10 +4,8 @@ constructor(ctx) {
     this.x = 380;
     this.y = 140;
     this.radius = 200;
-    this.speed = 0.05;
-    this.direction = 1;
 this.modalContent = {
-    name: "Cell wall",
+    name: "Cell Wall",
     description: "  The cell wall is a relatively rigid enclosure that provides structure, and helps limit cells bursting. Not all prokaryotes have a cell wall."
 };
 this.handleModalClick = this.handleModalClick.bind(this)
@@ -39,8 +37,8 @@ mouseX = mouseX - res.x;
 mouseY = mouseY - res.y;
 
 if (
-    mouseX >= this.x - 1 && mouseX <= this.x + 70 &&
-    mouseY >= this.y - 1 && mouseY <= this.y + 35 
+    mouseX >= this.x - 1 && mouseX <= this.x + 85 &&
+    mouseY >= this.y + 15 && mouseY <= this.y + 45 
 ) {
     this.showModal()
 }
@@ -59,7 +57,7 @@ draw() {
    
     this.ctx.fillStyle = 'orange';
     this.ctx.font = '14px myFont';
-    this.ctx.fillText('Cellwall', this.x + 10, this.y + 20); 
+    this.ctx.fillText('Cell Wall', this.x + 10, this.y + 20); 
 }
 
 animate() {

@@ -4,8 +4,6 @@ class CapsuleBox{
         this.x = 380;
         this.y = 100;
         this.radius = 200;
-        this.speed = 0.05;
-        this.direction = 1;
     this.modalContent = {
         name: "Capsule",
         description: " A capsule protects the prokaryotic cell from desiccation and defends against attack ie: by white blood cells. Not all prokaryotes have a capsule."

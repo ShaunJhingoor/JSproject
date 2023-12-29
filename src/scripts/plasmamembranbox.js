@@ -4,10 +4,8 @@ constructor(ctx) {
         this.x = 380;
         this.y = 180;
         this.radius = 200;
-        this.speed = 0.05;
-        this.direction = 1;
     this.modalContent = {
-        name: "Cell membrane",
+        name: "Cell Membrane",
         description: "The cell membrane encloses the cell and creates a distinct environment within. It regulates passage of materials in and out of the cell."
     };
     this.handleModalClick = this.handleModalClick.bind(this)
@@ -38,9 +36,10 @@ constructor(ctx) {
     mouseX = mouseX - res.x;
     mouseY = mouseY - res.y;
    
+   
     if (
-        mouseX >= this.x - 1 && mouseX <= this.x + 160 &&
-        mouseY >= this.y - 1 && mouseY <= this.y + 35 
+        mouseX >= this.x + 20 && mouseX <= this.x + 130 &&
+        mouseY >= this.y + 10 && mouseY <= this.y + 35 
     ) {
         this.showModal()
     }
