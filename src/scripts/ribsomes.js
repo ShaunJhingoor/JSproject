@@ -11,7 +11,7 @@ class Ribsomes {
         this.changex = this.constx + 5 
         this.changey = this.constx + 5
         this.modalContent = {
-            name: "Ribsosome",
+            name: "Ribosome",
             description: "Ribosomes are the sites of protein synthesis. In prokaryotic cells, they freely float throughout the cytoplasm."
         };
         this.handleModalClick = this.handleModalClick.bind(this)
