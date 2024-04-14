@@ -664,10 +664,35 @@ h1{
     color: white;
     border: #010101 solid;
     border-radius: 20px;
-    border-width: 10px;
+    border-width: 5px;
     border-color: black;
     background: linear-gradient(to top, rgb(82, 105, 113), rgb(3, 93, 116));
-    font-family: "Calibri", sans-serif;
     text-align: center;
+    width: 100dvw;
+}
+
+#instructionsHeader{
+ font-size: 25px;
+ font-family: "Calibri", sans-serif;
+ font-weight: bold;
+ text-decoration: underline;
+ text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+ margin-bottom: 20px;
+}
+
+#instructionsBody{
+    font-size: 20px;
+    font-weight: 350px;
+    font-family: "Calibri", sans-serif;
+    text-shadow: white 10px;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-bottom: 2vh;
+    line-height: 1.5;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+#micoscope{
+    margin-top: 2vh;
 }
 
