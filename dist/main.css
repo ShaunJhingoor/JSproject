@@ -49,14 +49,13 @@ body {
   justify-content: space-evenly;
   align-items: center;
   flex-direction: row;
-  margin-left: 6vw;
 }
 
 #cell1 {
   background-color: rgba(248, 247, 243, 0.9);
   border: 10px solid;
   border-color: rgb(22, 22, 22);
-  margin-top: 50px;
+  margin-top: 20px;
   border-radius: 50%;
   box-shadow: 0 0 40px rgb(72, 72, 72);
 }
@@ -65,15 +64,9 @@ body {
   background-color: rgba(248, 247, 243, 0.9);
   border: 10px solid;
   border-color: rgb(22, 22, 22);
-  margin-top: 50px;
+  margin-top: 20px;
   border-radius: 50%;
   box-shadow: 0px 0px 40px rgb(72, 72, 72);
-}
-
-.container {
-  display: flex;
-  align-items: center;
-  flex-direction: row;
 }
 
 #EukaryoticCell {
@@ -94,7 +87,7 @@ body {
 #ProkaryoticCell {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
 
