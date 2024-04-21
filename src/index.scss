@@ -716,13 +716,19 @@ h1{
   #github{
     width: 30px;
     height: 30px;
-    right: -530px
+    top: 50%;
+    transform: translate(-50%, -50%);
+    top: 20px;
+    margin-right: 80vw;
   }
 
   #linkedin{
     width: 30px;
     height: 30px;
-    right: -500px
+    top: 50%;
+    transform: translate(-50%, -50%);
+    top: 20px;
+    margin-right: 60vw;
   }
 
 
@@ -740,6 +746,8 @@ h1{
     background-size:cover;
     background-position:center;
     background-repeat: auto;
+    overflow-x: scroll;
+    overflow-y: scroll;
     /* Example filter: increase brightness */
     
 }

@@ -724,12 +724,18 @@ body {
   #github {
     width: 30px;
     height: 30px;
-    right: -530px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    top: 20px;
+    margin-right: 80vw;
   }
   #linkedin {
     width: 30px;
     height: 30px;
-    right: -500px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    top: 20px;
+    margin-right: 60vw;
   }
   #cellname1 {
     font-size: 40px;
@@ -742,6 +748,8 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: auto;
+    overflow-x: scroll;
+    overflow-y: scroll;
     /* Example filter: increase brightness */
   }
   /* Adjust other styles as needed for better display on small screens */
