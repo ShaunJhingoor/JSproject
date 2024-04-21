@@ -748,8 +748,7 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: auto;
-    overflow-x: scroll;
-    overflow-y: scroll;
+    overflow: scroll;
     /* Example filter: increase brightness */
   }
   /* Adjust other styles as needed for better display on small screens */
