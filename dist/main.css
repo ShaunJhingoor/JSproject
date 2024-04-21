@@ -697,3 +697,61 @@ body {
 #micoscope {
   margin-top: 2vh;
 }
+
+@media (max-width: 600px) {
+  /* Styles for screens up to 600px wide (typical for phones) */
+  #name {
+    position: relative;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    margin-top: 40px;
+  }
+  .container1 {
+    position: relative;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    top: 90px;
+    padding-top: 0px;
+    font-size: 18px;
+    width: 100vw;
+  }
+  h1 {
+    font-size: 45px;
+  }
+  #github {
+    width: 30px;
+    height: 30px;
+    right: -240px;
+  }
+  #linkedin {
+    width: 30px;
+    height: 30px;
+    right: -210px;
+  }
+  #cell1 {
+    width: 400px;
+    height: 400px;
+    padding: 0;
+  }
+  #cell2 {
+    width: 400px;
+    height: 400px;
+    padding: 0;
+  }
+  #cellname1 {
+    font-size: 40px;
+  }
+  #cellname2 {
+    font-size: 40px;
+  }
+  body {
+    background-image: url("../largeLab.png");
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* Example filter: increase brightness */
+  }
+  /* Adjust other styles as needed for better display on small screens */
+}
