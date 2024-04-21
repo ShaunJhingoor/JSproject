@@ -39,6 +39,7 @@ h1{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    overflow-x: scroll;
     /* Example filter: increase brightness */
     
 }
@@ -692,7 +693,7 @@ h1{
   #name{
     position: relative;
     top: 50%;
-    left: 70%;
+    left: 100%;
     transform: translate(-50%, -50%);
     margin-top: 40px;
    }
@@ -700,7 +701,7 @@ h1{
    .container1 {
     position: relative;
     top: 50%;
-    left: 70%;
+    left: 100%;
     transform: translate(-50%, -50%);
     top: 90px;
     // padding-bottom: 100px;
@@ -715,26 +716,16 @@ h1{
   #github{
     width: 30px;
     height: 30px;
-    right: -240px
+    right: -530px
   }
 
   #linkedin{
     width: 30px;
     height: 30px;
-    right: -210px
+    right: -500px
   }
 
-  #cell1{
-    width: 400px;
-    height: 400px;
-    padding: 0;
-  }
 
-  #cell2{
-    width: 400px;
-    height: 400px;
-    padding: 0; 
-  }
 
   #cellname1{
     font-size: 40px;
@@ -746,9 +737,9 @@ h1{
 
   body {
     background-image: url('../largeLab.png');
-    background-size:auto;
+    background-size:cover;
     background-position:center;
-    background-repeat: no-repeat;
+    background-repeat: auto;
     /* Example filter: increase brightness */
     
 }
