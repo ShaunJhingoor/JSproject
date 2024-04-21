@@ -697,9 +697,7 @@ h1{
 //     transform: translate(-50%, -50%);
 //     margin-top: 40px;
 //    }
-    html{
-        overflow: scroll;
-    }
+
 
    .container1 {
     position: relative;
@@ -714,6 +712,7 @@ h1{
 }
   h1{
     font-size: 45px;
+    color: red;
   }
   
   #github{
@@ -750,6 +749,8 @@ h1{
     background-position:center;
     background-repeat: auto;
     overflow: scroll;
+    width: 100%;
+    height: 100%;
     /* Example filter: increase brightness */
     
 }
