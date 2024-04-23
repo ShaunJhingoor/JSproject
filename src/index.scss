@@ -691,28 +691,21 @@ h1{
 @media (max-width: 1200px)  {
   /* Styles for screens up to 600px wide (typical for phones) */
   #name{
-    position: relative;
-    top: 50%;
-    left: 100%;
-    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-top: 40px;
    }
 
 
    .container1 {
-    position: relative;
-    top: 50%;
-    left: 100%;
-    transform: translate(-50%, -50%);
-    top: 90px;
-    // padding-bottom: 100px;
-    padding-top: 0px;
-    font-size: 18px;
-    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
   h1{
     font-size: 45px;
-    color: yellow;
+    color: red;
   }
   
   #github{
@@ -753,5 +746,7 @@ h1{
 html{
     overflow: scroll;
 }
-
+#cellcontainer{
+   
+}
 }
