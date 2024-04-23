@@ -701,21 +701,18 @@ body {
 @media (max-width: 1201px) {
   /* Styles for screens up to 600px wide (typical for phones) */
   #name {
-    margin-left: 20vw;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 40px;
   }
   .container1 {
-    margin-left: 20vw;
     display: flex;
     justify-content: center;
     align-items: end;
   }
   h1 {
     font-size: 45px;
-    color: red;
   }
   #github {
     width: 30px;
@@ -740,7 +737,7 @@ body {
     font-size: 40px;
   }
   .cellContainer {
-    margin-right: 20vw;
+    flex-direction: column;
   }
   body {
     overflow: scroll;

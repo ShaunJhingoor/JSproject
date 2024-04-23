@@ -57,7 +57,7 @@ h1{
     border: 10px solid;
     border-color: rgb(22, 22, 22);
     margin-top: 20px;
-    // margin-left: 10vw;
+    
     // margin-left: 5vw;
     border-radius: 50%;
     box-shadow: 0 0 40px rgb(72, 72, 72);
@@ -691,7 +691,7 @@ h1{
 @media (max-width: 1201px)  {
   /* Styles for screens up to 600px wide (typical for phones) */
   #name{
-    margin-left: 20vw;
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -700,14 +700,13 @@ h1{
 
 
    .container1 {
-    margin-left: 20vw;
+    
     display: flex;
     justify-content: center;
     align-items:end;
 }
   h1{
     font-size: 45px;
-    color: red;
   }
   
   #github{
@@ -739,7 +738,7 @@ h1{
     font-size: 40px;
   }
   .cellContainer{
-    margin-right: 20vw;
+    flex-direction: column;
   }
   body {
     overflow: scroll;
