@@ -688,9 +688,10 @@ h1{
     margin-top: 2vh;
 }
 
-@media (max-width: 1200px)  {
+@media (max-width: 1201px)  {
   /* Styles for screens up to 600px wide (typical for phones) */
   #name{
+    margin-left: 20vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -699,9 +700,10 @@ h1{
 
 
    .container1 {
+    margin-left: 20vw;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items:end;
 }
   h1{
     font-size: 45px;
@@ -718,6 +720,7 @@ h1{
   }
 
   #linkedin{
+    
     width: 30px;
     height: 30px;
     top: 50%;
@@ -735,7 +738,9 @@ h1{
   #cellname2{
     font-size: 40px;
   }
-
+  .cellContainer{
+    margin-right: 20vw;
+  }
   body {
     overflow: scroll;
     
@@ -746,7 +751,5 @@ h1{
 html{
     overflow: scroll;
 }
-#cellcontainer{
-   
-}
+
 }
