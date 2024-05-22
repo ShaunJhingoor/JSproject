@@ -688,6 +688,8 @@ h1{
     margin-top: 2vh;
 }
 
+
+
 @media (max-width: 1201px)  {
   /* Styles for screens up to 600px wide (typical for phones) */
   #name{
@@ -712,20 +714,13 @@ h1{
   #github{
     width: 30px;
     height: 30px;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    top: 20px;
-    margin-right: 80vw;
   }
 
   #linkedin{
     
     width: 30px;
     height: 30px;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    top: 20px;
-    margin-right: 60vw;
+   
   }
 
 
@@ -751,4 +746,7 @@ html{
     overflow: scroll;
 }
 
+#cell1{
+    width:400px
+}
 }
